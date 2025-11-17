@@ -63,10 +63,10 @@
               EOF
 
               echo "🧾 Writing build metadata ..."
-              COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
               if [ -z "$COMMIT_HASH" ]; then
               COMMIT_HASH="unknown"
               fi
+              COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
               BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
               cat > gh-pages/version.json <<JSON
               {
