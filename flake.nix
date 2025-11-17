@@ -1,5 +1,5 @@
 {
-  description = "Agent Ontology Flake with Ontospy Documentation";
+  description = "Agent Ontology Flake with Ontospy Documentation (safe pip install)";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -11,31 +11,6 @@
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
     in
     {
-      devShells = forAllSystems (system:
-        let
-          pkgs = nixpkgs.legacyPackages.${system};
-        in
-        {
-          default = pkgs.mkShell {
-            name = "agent-ontology-dev";
-            packages = with pkgs; [
-              python3
-              python3Packages.pip
-              apache-jena
-              openjdk17
-              git
-            ];
-            shellHook = ''
-              echo "🐍 Installing Python dependencies (ontospy, rdflib, pyshacl)..."
-              pip install --quiet --upgrade ontospy rdflib pyshacl
-              export JAVA_HOME=${pkgs.openjdk17}
-              export PATH=$JAVA_HOME/bin:$PATH
-              echo "✅ Environment ready. Run: nix build .#gh-pages"
-            '';
-          };
-        }
-      );
-
       packages = forAllSystems (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
@@ -44,11 +19,12 @@
           gh-pages = pkgs.stdenv.mkDerivation {
             name = "agent-ontology-gh-pages";
             src = self;
+
             buildInputs = [
               pkgs.apache-jena
               pkgs.openjdk17
               pkgs.python3
-              pkgs.python3Packages.pip
+              pkgs.python3Packages.virtualenv
             ];
 
             buildPhase = ''
@@ -59,25 +35,19 @@
               echo "🌐 Generating ontology.ttl ..."
               riot --output=TURTLE ontologies/core.ttl > gh-pages/ontology.ttl
 
-              echo "🐍 Installing Ontospy via pip ..."
-              pip install --quiet --no-cache-dir ontospy
+              echo "🐍 Creating virtualenv and installing Ontospy ..."
+              python -m venv .venv
+              source .venv/bin/activate
+              pip install --quiet ontospy
 
-
-              echo "🧩 Generating HTML documentation with Ontospy ..."
-              ontospy gendocs ontologies/core.ttl -o gh-pages/docs
+              echo "🧩 Generating HTML documentation ..."
+              .venv/bin/ontospy gendocs ontologies/core.ttl -o gh-pages/docs
 
               echo "📄 Creating index.html ..."
               cat > gh-pages/index.html <<EOF
               <!DOCTYPE html>
               <html lang="en">
-              <head>
-                <meta charset="UTF-8">
-                <title>Agent Ontology</title>
-                <style>
-                  body { font-family: sans-serif; margin: 2em; }
-                  a { color: #0366d6; text-decoration: none; }
-                </style>
-              </head>
+              <head><meta charset="UTF-8"><title>Agent Ontology</title></head>
               <body>
                 <h1>Agent Ontology</h1>
                 <ul>
