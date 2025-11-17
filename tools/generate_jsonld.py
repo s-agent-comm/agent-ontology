@@ -31,8 +31,32 @@ def convert_ttl_to_jsonld():
             jsonld_filename = ttl_file.with_suffix(".jsonld").name
             output_path = output_dir / jsonld_filename
             
-            # Serialize to JSON-LD
-            g.serialize(destination=output_path, format="json-ld", indent=4)
+            # Define a custom context for JSON-LD to use prefixes
+            context = {
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                "owl": "http://www.w3.org/2002/07/owl#",
+                "dcterms": "http://purl.org/dc/terms/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "agent": "https://w3id.org/agent-ontology/agent#",
+                "core": "https://w3id.org/agent-ontology/core#",
+                "identity": "https://w3id.org/agent-ontology/identity#",
+                "economic": "https://w3id.org/agent-ontology/economic#",
+                "lifecycle": "https://w3id.org/agent-ontology/lifecycle#",
+                "contract": "https://w3id.org/agent-ontology/contract#",
+                "agent-profile": "https://w3id.org/agent-ontology/agent-profile#",
+                "capability": "https://w3id.org/agent-ontology/capability#",
+                "delegation": "https://w3id.org/agent-ontology/delegation#",
+                "execution-context": "https://w3id.org/agent-ontology/execution-context#",
+                "intent": "https://w3id.org/agent-ontology/intent#",
+                "ledger": "https://w3id.org/agent-ontology/ledger#",
+                "payment": "https://w3id.org/agent-ontology/payment#",
+                "security-binding": "https://w3id.org/agent-ontology/security-binding#",
+                "threat-model": "https://w3id.org/agent-ontology/threat-model#",
+                "accountability": "https://w3id.org/agent-ontology/accountability#",
+                "ontology": "https://w3id.org/agent-ontology/ontology#"
+            }
+            # Serialize to JSON-LD with the custom context
+            g.serialize(destination=output_path, format="json-ld", indent=4, context=context)
             print(f"Successfully converted {ttl_file} to {output_path}")
 
         except Exception as e:
