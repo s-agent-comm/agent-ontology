@@ -1,55 +1,59 @@
-@prefix asc: <https://slashlife.ai/ontology/agent-semantic-communication#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix tm: <https://w3id.org/agent-ontology/threat-model#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 #################################################################
 # Ontology Header
 #################################################################
 
-asc: a owl:Ontology ;
-    dct:title "Minimal Agent Semantic Communication Ontology" ;
-    dct:creator "SlashLife AI / Homomorphix OS" ;
-    dct:description "Ontology for minimal semantic interoperability and threat modeling among AI Agents." ;
-    dct:version "0.1" .
+<https://w3id.org/agent-ontology/threat-model>
+  dcterms:title "Threat Model Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Ontology for minimal semantic interoperability and threat modeling among AI Agents." ;
+  dcterms:modified "2025-11-17"^^xsd:date ;
+  owl:versionInfo "0.1.0" .
 
 #################################################################
 # Core Classes
 #################################################################
 
-# Agent 身分
-asc:Agent a owl:Class ;
+# Agent Identity
+tm:Agent a owl:Class ;
     rdfs:label "Agent" ;
     rdfs:comment "An autonomous computational entity capable of semantic communication." .
 
-# 能力（防 Capability Misrepresentation）
-asc:Capability a owl:Class ;
+# Capability (to prevent Capability Misrepresentation)
+tm:Capability a owl:Class ;
     rdfs:label "Capability" ;
     rdfs:comment "A functional ability that an Agent claims or possesses." .
 
-# 任務（與 Task Graph 對應）
-asc:Task a owl:Class ;
+# Task (corresponds to Task Graph)
+tm:Task a owl:Class ;
     rdfs:label "Task" ;
     rdfs:comment "A well-defined action unit exchanged between Agents." .
 
-# 意圖（Intent Ambiguity Threat 的基礎）
-asc:Intent a owl:Class ;
+# Intent (basis for Intent Ambiguity Threat)
+tm:Intent a owl:Class ;
     rdfs:label "Intent" ;
     rdfs:comment "A purpose or goal communicated by an Agent." .
 
-# 任務 DAG 結構必要元素
-asc:TaskNode a owl:Class ;
+# Essential elements for Task DAG structure
+tm:TaskNode a owl:Class ;
     rdfs:label "TaskNode" ;
     rdfs:comment "Node in a task dependency graph." .
 
-asc:TaskDependency a owl:Class ;
+tm:TaskDependency a owl:Class ;
     rdfs:label "TaskDependency" ;
     rdfs:comment "Dependency relation in a task graph." .
 
-# 委派（Delegation Threat）
-asc:Delegation a owl:Class ;
+# Delegation (Delegation Threat)
+tm:Delegation a owl:Class ;
     rdfs:label "Delegation" ;
     rdfs:comment "An assignment of authority or responsibility between Agents." .
 
@@ -57,90 +61,90 @@ asc:Delegation a owl:Class ;
 # Object Properties
 #################################################################
 
-# Agent 與 Capability 的基本關聯
-asc:hasCapability a owl:ObjectProperty ;
+# Basic association between Agent and Capability
+tm:hasCapability a owl:ObjectProperty ;
     rdfs:label "hasCapability" ;
-    rdfs:domain asc:Agent ;
-    rdfs:range asc:Capability ;
+    rdfs:domain tm:Agent ;
+    rdfs:range tm:Capability ;
     rdfs:comment "Declares that an Agent possesses a specific Capability." .
 
-asc:requiresCapability a owl:ObjectProperty ;
+tm:requiresCapability a owl:ObjectProperty ;
     rdfs:label "requiresCapability" ;
-    rdfs:domain asc:Task ;
-    rdfs:range asc:Capability ;
+    rdfs:domain tm:Task ;
+    rdfs:range tm:Capability ;
     rdfs:comment "Declares that a Task requires a specific Capability." .
 
-# Agent 行為
-asc:expressesIntent a owl:ObjectProperty ;
+# Agent Behavior
+tm:expressesIntent a owl:ObjectProperty ;
     rdfs:label "expressesIntent" ;
-    rdfs:domain asc:Agent ;
-    rdfs:range asc:Intent ;
+    rdfs:domain tm:Agent ;
+    rdfs:range tm:Intent ;
     rdfs:comment "An Agent expresses a certain Intent." .
 
-asc:performsTask a owl:ObjectProperty ;
+tm:performsTask a owl:ObjectProperty ;
     rdfs:label "performsTask" ;
-    rdfs:domain asc:Agent ;
-    rdfs:range asc:Task ;
+    rdfs:domain tm:Agent ;
+    rdfs:range tm:Task ;
     rdfs:comment "An Agent performs a given Task." .
 
-# 任務圖（Task Graph）
-asc:hasSubtask a owl:ObjectProperty ;
+# Task Graph
+tm:hasSubtask a owl:ObjectProperty ;
     rdfs:label "hasSubtask" ;
-    rdfs:domain asc:Task ;
-    rdfs:range asc:Task ;
+    rdfs:domain tm:Task ;
+    rdfs:range tm:Task ;
     rdfs:comment "Represents hierarchical task decomposition." .
 
-asc:hasDependency a owl:ObjectProperty ;
+tm:hasDependency a owl:ObjectProperty ;
     rdfs:label "hasDependency" ;
-    rdfs:domain asc:TaskNode ;
-    rdfs:range asc:TaskNode ;
+    rdfs:domain tm:TaskNode ;
+    rdfs:range tm:TaskNode ;
     rdfs:comment "Represents a dependency between task nodes." .
 
-# 委派
-asc:delegatedTo a owl:ObjectProperty ;
+# Delegation
+tm:delegatedTo a owl:ObjectProperty ;
     rdfs:label "delegatedTo" ;
-    rdfs:domain asc:Delegation ;
-    rdfs:range asc:Agent ;
+    rdfs:domain tm:Delegation ;
+    rdfs:range tm:Agent ;
     rdfs:comment "Specifies the Agent to whom a task or authority is delegated." .
 
-asc:delegatedFrom a owl:ObjectProperty ;
+tm:delegatedFrom a owl:ObjectProperty ;
     rdfs:label "delegatedFrom" ;
-    rdfs:domain asc:Delegation ;
-    rdfs:range asc:Agent ;
+    rdfs:domain tm:Delegation ;
+    rdfs:range tm:Agent ;
     rdfs:comment "Specifies the Agent delegating a task or authority." .
 
-asc:delegatesTask a owl:ObjectProperty ;
+tm:delegatesTask a owl:ObjectProperty ;
     rdfs:label "delegatesTask" ;
-    rdfs:domain asc:Agent ;
-    rdfs:range asc:Task ;
+    rdfs:domain tm:Agent ;
+    rdfs:range tm:Task ;
     rdfs:comment "An Agent delegates a specific Task to another Agent." .
 
 #################################################################
 # Axioms for Threat Detection (Minimal)
 #################################################################
 
-# Capability 與 Task 的一致性（防止 Capability Misrepresentation）
-asc:hasCapability rdfs:subPropertyOf asc:requiresCapability .
+# Consistency between Capability and Task (prevents Capability Misrepresentation)
+tm:hasCapability rdfs:subPropertyOf tm:requiresCapability .
 
-# Agent 不可宣稱矛盾能力（Minimal Disjoint Axiom）
-asc:CriticalCapability a owl:Class ;
-    owl:disjointWith asc:RestrictedCapability .
+# Agents cannot claim contradictory capabilities (Minimal Disjoint Axiom)
+tm:CriticalCapability a owl:Class ;
+    owl:disjointWith tm:RestrictedCapability .
 
-# Intent 與 Task 的語義一致性
-asc:IntentAlignsWithTask a owl:ObjectProperty ;
+# Semantic consistency between Intent and Task
+tm:IntentAlignsWithTask a owl:ObjectProperty ;
     rdfs:label "IntentAlignsWithTask" ;
-    rdfs:domain asc:Intent ;
-    rdfs:range asc:Task ;
+    rdfs:domain tm:Intent ;
+    rdfs:range tm:Task ;
     rdfs:comment "Links expressed Intent to the Task it authorizes or motivates." .
 
 #################################################################
 # Example Individuals (Optional)
 #################################################################
 
-asc:exampleAgent a asc:Agent ;
-    asc:hasCapability asc:exampleCapability .
+tm:exampleAgent a tm:Agent ;
+    tm:hasCapability tm:exampleCapability .
 
-asc:exampleCapability a asc:Capability .
+tm:exampleCapability a tm:Capability .
 
-asc:taskA a asc:Task ;
-    asc:requiresCapability asc:exampleCapability .
+tm:taskA a tm:Task ;
+    tm:requiresCapability tm:exampleCapability .

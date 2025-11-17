@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ns.slashlife.ai/agent/profiles/execution-context.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/execution-context.jsonld",
   "title": "Execution Context Schema",
   "description": "Defines the runtime context under which an action is executed.",
   "type": "object",
-  "@context": "https://ns.slashlife.ai/agent/context/execution-context.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/execution-context.jsonld",
 
   "properties": {
     "id": {

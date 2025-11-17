@@ -1,28 +1,28 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#compliance",
+    "@id": "https://w3id.org/agent-ontology/accountability#compliance",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ComplianceAssessment"
+        "@id": "https://w3id.org/agent-ontology/accountability#ComplianceAssessment"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#riskClass",
+    "@id": "https://w3id.org/agent-ontology/accountability#riskClass",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ComplianceAssessment"
+        "@id": "https://w3id.org/agent-ontology/accountability#ComplianceAssessment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -32,29 +32,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#referencesDelegation",
+    "@id": "https://w3id.org/agent-ontology/accountability#referencesDelegation",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#DelegationBasis"
+        "@id": "https://w3id.org/agent-ontology/accountability#DelegationBasis"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#intent",
+    "@id": "https://w3id.org/agent-ontology/accountability#intent",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability",
+    "@id": "https://w3id.org/agent-ontology/accountability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -86,19 +86,19 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/capability"
+        "@id": "https://w3id.org/agent-ontology/capability"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger"
+        "@id": "https://w3id.org/agent-ontology/ledger"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -108,23 +108,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#action",
+    "@id": "https://w3id.org/agent-ontology/accountability#action",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#ComplianceAssessment",
+    "@id": "https://w3id.org/agent-ontology/accountability#ComplianceAssessment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -140,39 +140,39 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#responsibility",
+    "@id": "https://w3id.org/agent-ontology/accountability#responsibility",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ResponsibilityAttribution"
+        "@id": "https://w3id.org/agent-ontology/accountability#ResponsibilityAttribution"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#assignedTo",
+    "@id": "https://w3id.org/agent-ontology/accountability#assignedTo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ResponsibilityAttribution"
+        "@id": "https://w3id.org/agent-ontology/accountability#ResponsibilityAttribution"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#Agent"
+        "@id": "https://w3id.org/agent-ontology/agent#Agent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#ResponsibilityAttribution",
+    "@id": "https://w3id.org/agent-ontology/accountability#ResponsibilityAttribution",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -188,13 +188,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#timestamp",
+    "@id": "https://w3id.org/agent-ontology/accountability#timestamp",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -204,7 +204,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent",
+    "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -220,13 +220,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#eventId",
+    "@id": "https://w3id.org/agent-ontology/accountability#eventId",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -236,7 +236,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#linkedLedgerEvent",
+    "@id": "https://w3id.org/agent-ontology/accountability#linkedLedgerEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -247,23 +247,23 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#rationale",
+    "@id": "https://w3id.org/agent-ontology/accountability#rationale",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ResponsibilityAttribution"
+        "@id": "https://w3id.org/agent-ontology/accountability#ResponsibilityAttribution"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -273,29 +273,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#actor",
+    "@id": "https://w3id.org/agent-ontology/accountability#actor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#Agent"
+        "@id": "https://w3id.org/agent-ontology/agent#Agent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#aiActSection",
+    "@id": "https://w3id.org/agent-ontology/accountability#aiActSection",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#ComplianceAssessment"
+        "@id": "https://w3id.org/agent-ontology/accountability#ComplianceAssessment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -305,23 +305,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#delegationChain",
+    "@id": "https://w3id.org/agent-ontology/accountability#delegationChain",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#DelegationBasis"
+        "@id": "https://w3id.org/agent-ontology/accountability#DelegationBasis"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/accountability#DelegationBasis",
+    "@id": "https://w3id.org/agent-ontology/accountability#DelegationBasis",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

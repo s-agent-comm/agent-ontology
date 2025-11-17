@@ -1,10 +1,10 @@
-@prefix ledger: <https://ns.slashlife.ai/agent/ledger#> .
-@prefix core: <https://ns.slashlife.ai/agent/core#> .
-@prefix agent: <https://ns.slashlife.ai/agent/agent#> .
-@prefix del: <https://ns.slashlife.ai/agent/delegation#> .
-@prefix acc: <https://ns.slashlife.ai/agent/accountability#> .
-@prefix cap: <https://ns.slashlife.ai/agent/capability#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ledger: <https://w3id.org/agent-ontology/ledger#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix agent: <https://w3id.org/agent-ontology/agent#> .
+@prefix del: <https://w3id.org/agent-ontology/delegation#> .
+@prefix acc: <https://w3id.org/agent-ontology/accountability#> .
+@prefix cap: <https://w3id.org/agent-ontology/capability#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -14,17 +14,19 @@
 # Ontology Header
 #################################################################
 
-<https://ns.slashlife.ai/agent/ledger>
-    a owl:Ontology ;
-    dct:title "Ledger Ontology" ;
-    dct:description "Defines concepts for verifiable, append-only records of AI Agent events, actions, and governance." ;
-    dct:modified "2025-11-10"^^xsd:date ;
-    owl:versionInfo "0.2.0" ;
-    owl:imports <https://ns.slashlife.ai/agent/core> ;
-    owl:imports <https://ns.slashlife.ai/agent/agent> ;
-    owl:imports <https://ns.slashlife.ai/agent/delegation> ;
-    owl:imports <https://ns.slashlife.ai/agent/accountability> ;
-    owl:imports <https://ns.slashlife.ai/agent/capability> .
+<https://w3id.org/agent-ontology/ledger>
+  dcterms:title "Ledger Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts for verifiable, append-only records of AI Agent events, actions, and governance." ;
+  dcterms:modified "2025-11-10"^^xsd:date ;
+  owl:versionInfo "0.2.0" ;
+  owl:imports <https://w3id.org/agent-ontology/core> ;
+  owl:imports <https://w3id.org/agent-ontology/agent> ;
+  owl:imports <https://w3id.org/agent-ontology/delegation> ;
+  owl:imports <https://w3id.org/agent-ontology/accountability> ;
+  owl:imports <https://w3id.org/agent-ontology/capability> .
 
 #################################################################
 # Ledger Core Classes

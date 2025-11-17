@@ -1,26 +1,28 @@
-@prefix intent: <https://ns.slashlife.ai/agent/intent#> .
-@prefix core: <https://ns.slashlife.ai/agent/core#> .
-@prefix del: <https://ns.slashlife.ai/agent/delegation#> .
-@prefix ledger: <https://ns.slashlife.ai/agent/ledger#> .
-@prefix cap: <https://ns.slashlife.ai/agent/capability#> .
+@prefix intent: <https://w3id.org/agent-ontology/intent#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix del: <https://w3id.org/agent-ontology/delegation#> .
+@prefix ledger: <https://w3id.org/agent-ontology/ledger#> .
+@prefix cap: <https://w3id.org/agent-ontology/capability#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 #################################################################
 # Ontology Header
 #################################################################
 
-<https://ns.slashlife.ai/agent/intent>
-    a owl:Ontology ;
-    dct:title "Intent Ontology" ;
-    dct:description "Defines concepts related to the semantic expression of purpose and objectives for AI Agent actions." ;
-    dct:modified "2025-11-10"^^xsd:date ;
-    owl:versionInfo "0.2.0" ;
-    owl:imports <https://ns.slashlife.ai/agent/core> ;
-    owl:imports <https://ns.slashlife.ai/agent/delegation> ;
-    owl:imports <https://ns.slashlife.ai/agent/ledger> .
+<https://w3id.org/agent-ontology/intent>
+  dcterms:title "Intent Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts related to the semantic expression of purpose and objectives for AI Agent actions." ;
+  dcterms:modified "2025-11-10"^^xsd:date ;
+  owl:versionInfo "0.2.0" ;
+  owl:imports <https://w3id.org/agent-ontology/core> ;
+  owl:imports <https://w3id.org/agent-ontology/delegation> ;
+  owl:imports <https://w3id.org/agent-ontology/ledger> .
 
 #################################################################
 # Intent Model — Core Classes

@@ -1,12 +1,12 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#stateChange",
+    "@id": "https://w3id.org/agent-ontology/ledger#stateChange",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#environment",
+    "@id": "https://w3id.org/agent-ontology/ledger#environment",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -27,7 +27,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -37,45 +37,45 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#governanceAction",
+    "@id": "https://w3id.org/agent-ontology/ledger#governanceAction",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#GovernanceLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#GovernanceLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#GovernanceAction"
+        "@id": "https://w3id.org/agent-ontology/ledger#GovernanceAction"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#executionContext",
+    "@id": "https://w3id.org/agent-ontology/ledger#executionContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/core#ExecutionContext"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#hash",
+    "@id": "https://w3id.org/agent-ontology/ledger#hash",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -85,7 +85,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#appendOnly",
+    "@id": "https://w3id.org/agent-ontology/ledger#appendOnly",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -96,7 +96,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -106,13 +106,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#riskClassification",
+    "@id": "https://w3id.org/agent-ontology/ledger#riskClassification",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -122,23 +122,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#result",
+    "@id": "https://w3id.org/agent-ontology/ledger#result",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#ExecutionResult"
+        "@id": "https://w3id.org/agent-ontology/core#ExecutionResult"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#delegation",
+    "@id": "https://w3id.org/agent-ontology/ledger#delegation",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -149,17 +149,17 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger",
+    "@id": "https://w3id.org/agent-ontology/ledger",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -181,19 +181,19 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability"
+        "@id": "https://w3id.org/agent-ontology/accountability"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/capability"
+        "@id": "https://w3id.org/agent-ontology/capability"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -203,13 +203,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#sandboxProfile",
+    "@id": "https://w3id.org/agent-ontology/ledger#sandboxProfile",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -219,13 +219,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#eventId",
+    "@id": "https://w3id.org/agent-ontology/ledger#eventId",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -235,13 +235,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#proofType",
+    "@id": "https://w3id.org/agent-ontology/ledger#proofType",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -251,29 +251,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#action",
+    "@id": "https://w3id.org/agent-ontology/ledger#action",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#aiActSection",
+    "@id": "https://w3id.org/agent-ontology/ledger#aiActSection",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -283,7 +283,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent",
+    "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -299,7 +299,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#accountabilityRecord",
+    "@id": "https://w3id.org/agent-ontology/ledger#accountabilityRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -310,17 +310,17 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability#AccountabilityEvent"
+        "@id": "https://w3id.org/agent-ontology/accountability#AccountabilityEvent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#intent",
+    "@id": "https://w3id.org/agent-ontology/ledger#intent",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -331,7 +331,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -341,7 +341,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#previousEventHash",
+    "@id": "https://w3id.org/agent-ontology/ledger#previousEventHash",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -352,7 +352,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -362,13 +362,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#sideEffect",
+    "@id": "https://w3id.org/agent-ontology/ledger#sideEffect",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -378,23 +378,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#usesCapability",
+    "@id": "https://w3id.org/agent-ontology/ledger#usesCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#GovernanceLedgerEvent",
+    "@id": "https://w3id.org/agent-ontology/ledger#GovernanceLedgerEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -410,12 +410,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent",
+    "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -431,12 +431,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#verifiedBy",
+    "@id": "https://w3id.org/agent-ontology/ledger#verifiedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -447,7 +447,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -457,7 +457,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#hardwareAnchor",
+    "@id": "https://w3id.org/agent-ontology/ledger#hardwareAnchor",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -468,7 +468,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -478,13 +478,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#timestamp",
+    "@id": "https://w3id.org/agent-ontology/ledger#timestamp",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -494,13 +494,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#publicKey",
+    "@id": "https://w3id.org/agent-ontology/ledger#publicKey",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -510,7 +510,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#actor",
+    "@id": "https://w3id.org/agent-ontology/ledger#actor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -521,23 +521,23 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#Agent"
+        "@id": "https://w3id.org/agent-ontology/agent#Agent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#signature",
+    "@id": "https://w3id.org/agent-ontology/ledger#signature",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -547,29 +547,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#specVersion",
+    "@id": "https://w3id.org/agent-ontology/ledger#specVersion",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#GovernanceLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#GovernanceLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#SpecVersion"
+        "@id": "https://w3id.org/agent-ontology/ledger#SpecVersion"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/ledger#capabilityVersion",
+    "@id": "https://w3id.org/agent-ontology/ledger#capabilityVersion",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerEvent"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [

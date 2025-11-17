@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/payment",
+    "@id": "https://w3id.org/agent-ontology/payment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -22,10 +22,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -35,7 +35,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent",
+    "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -51,18 +51,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Intent"
+        "@id": "https://w3id.org/agent-ontology/core#Intent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#reason",
+    "@id": "https://w3id.org/agent-ontology/payment#reason",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -77,13 +77,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#hasSettlementInterface",
+    "@id": "https://w3id.org/agent-ontology/payment#hasSettlementInterface",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -93,18 +93,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#SettlementInterface"
+        "@id": "https://w3id.org/agent-ontology/payment#SettlementInterface"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#payer",
+    "@id": "https://w3id.org/agent-ontology/payment#payer",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -114,18 +114,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#AgentEntity"
+        "@id": "https://w3id.org/agent-ontology/core#AgentEntity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#category",
+    "@id": "https://w3id.org/agent-ontology/payment#category",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#SettlementInterface"
+        "@id": "https://w3id.org/agent-ontology/payment#SettlementInterface"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -135,13 +135,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#unit",
+    "@id": "https://w3id.org/agent-ontology/payment#unit",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -156,7 +156,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#SettlementInterface",
+    "@id": "https://w3id.org/agent-ontology/payment#SettlementInterface",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -172,13 +172,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#acceptedMethod",
+    "@id": "https://w3id.org/agent-ontology/payment#acceptedMethod",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#SettlementInterface"
+        "@id": "https://w3id.org/agent-ontology/payment#SettlementInterface"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -188,13 +188,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#payee",
+    "@id": "https://w3id.org/agent-ontology/payment#payee",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -204,18 +204,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#AgentEntity"
+        "@id": "https://w3id.org/agent-ontology/core#AgentEntity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/payment#amount",
+    "@id": "https://w3id.org/agent-ontology/payment#amount",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/payment#PaymentIntent"
+        "@id": "https://w3id.org/agent-ontology/payment#PaymentIntent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

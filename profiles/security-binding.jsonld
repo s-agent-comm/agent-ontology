@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ns.slashlife.ai/agent/profiles/security-binding.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/security-binding.jsonld",
   "title": "Security Binding Schema",
   "description": "Defines the cryptographic trust chain binding DID, Key Material, Hardware, and Ledger verification.",
   "type": "object",
-  "@context": "https://ns.slashlife.ai/agent/context/security-binding.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/security-binding.jsonld",
 
   "properties": {
     "id": {

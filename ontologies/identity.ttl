@@ -1,21 +1,23 @@
-@prefix id: <https://ns.slashlife.ai/agent/identity#> .
-@prefix core: <https://ns.slashlife.ai/agent/core#> .
+@prefix id: <https://w3id.org/agent-ontology/identity#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 #################################################################
 # Ontology Header
 #################################################################
 
-<https://ns.slashlife.ai/agent/identity>
-    a owl:Ontology ;
-    dct:title "Identity Ontology" ;
-    dct:description "Defines concepts related to the identity of AI Agents, including DIDs and key management." ;
-    dct:modified "2025-11-10"^^xsd:date ;
-    owl:versionInfo "0.1.0" ;
-    owl:imports <https://ns.slashlife.ai/agent/core> .
+<https://w3id.org/agent-ontology/identity>
+  dcterms:title "Identity Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts related to the identity of AI Agents, including DIDs and key management." ;
+  dcterms:modified "2025-11-10"^^xsd:date ;
+  owl:versionInfo "0.1.0" ;
+  owl:imports <https://w3id.org/agent-ontology/core> .
 
 #################################################################
 # Identity Classes

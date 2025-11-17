@@ -1,15 +1,16 @@
 {
   "@context": {
-    "@vocab": "https://ns.slashlife.ai/agent/agent#",
-    "core": "https://ns.slashlife.ai/agent/core#",
-    "id": "https://ns.slashlife.ai/agent/identity#",
-    "cap": "https://ns.slashlife.ai/agent/capability#",
-    "del": "https://ns.slashlife.ai/agent/delegation#",
-    "life": "https://ns.slashlife.ai/agent/lifecycle#",
-    "econ": "https://ns.slashlife.ai/agent/economic#",
-    "contract": "https://ns.slashlife.ai/agent/contract#",
+    "@vocab": "https://w3id.org/agent-ontology/agent#",
+    "core": "https://w3id.org/agent-ontology/core#",
+    "id": "https://w3id.org/agent-ontology/identity#",
+    "cap": "https://w3id.org/agent-ontology/capability#",
+    "del": "https://w3id.org/agent-ontology/delegation#",
     "did_ns": "https://www.w3.org/ns/did#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "economic": "/context/economic.jsonld",
+    "lifecycle": "/context/lifecycle.jsonld",
+    "contract": "/context/contract.jsonld",
 
     /* ==== Core Identifiers ==== */
 
@@ -97,43 +98,6 @@
       "@id": "del:delegationScope",
       "@type": "@id"
     },
-
-
-    /* ==== Lifecycle / Genesis / Trust Anchors ==== */
-
-    "genesis_record": "life:genesisRecord",
-    "state": "life:state",
-    "health_check": "life:healthCheck",
-    "decommission_record": "life:decommissionRecord",
-
-    "timestamp": {
-      "@id": "core:timestamp",
-      "@type": "xsd:dateTime"
-    },
-    "ledger_event_id": {
-      "@id": "life:ledgerEventId",
-      "@type": "xsd:string"
-    },
-
-
-    /* ==== Economic Interface (wallet) ==== */
-
-    "wallets": "econ:wallets",
-    "address": "econ:walletAddress",
-    "currencies": "econ:supportedCurrencies",
-    "economicCapabilities": "econ:capabilities",
-
-
-    /* ==== Contractual Interfaces ==== */
-
-    "contracts": "contract:contracts",
-    "terms_uri": {
-      "@id": "contract:termsUri",
-      "@type": "@id"
-    },
-    "compensation_terms": "contract:compensationTerms",
-    "parties": "contract:parties",
-    "scope": "contract:scope",
 
 
     /* ==== Utility ==== */

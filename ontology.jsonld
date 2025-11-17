@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/ontology",
+    "@id": "https://w3id.org/agent-ontology/ontology",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -16,40 +16,40 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/capability"
+        "@id": "https://w3id.org/agent-ontology/capability"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/accountability"
+        "@id": "https://w3id.org/agent-ontology/accountability"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger"
+        "@id": "https://w3id.org/agent-ontology/ledger"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/identity"
+        "@id": "https://w3id.org/agent-ontology/identity"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile"
+        "@id": "https://w3id.org/agent-ontology/agent-profile"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context"
+        "@id": "https://w3id.org/agent-ontology/execution-context"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/intent"
+        "@id": "https://w3id.org/agent-ontology/intent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding"
+        "@id": "https://w3id.org/agent-ontology/security-binding"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/payment"
+        "@id": "https://w3id.org/agent-ontology/payment"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [

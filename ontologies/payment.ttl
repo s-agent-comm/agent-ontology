@@ -1,23 +1,25 @@
-@prefix payment: <https://ns.slashlife.ai/agent/payment#> .
-@prefix core: <https://ns.slashlife.ai/agent/core#> .
-@prefix agent: <https://ns.slashlife.ai/agent/agent#> .
+@prefix payment: <https://w3id.org/agent-ontology/payment#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix agent: <https://w3id.org/agent-ontology/agent#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 #################################################################
 # Ontology Header
 #################################################################
 
-<https://ns.slashlife.ai/agent/payment>
-    a owl:Ontology ;
-    dct:title "Payment Ontology" ;
-    dct:description "Defines concepts for expressing payment intents and settlement interfaces between AI Agents." ;
-    dct:modified "2025-11-10"^^xsd:date ;
-    owl:versionInfo "0.2.0" ;
-    owl:imports <https://ns.slashlife.ai/agent/core> ;
-    owl:imports <https://ns.slashlife.ai/agent/agent> .
+<https://w3id.org/agent-ontology/payment>
+  dcterms:title "Payment Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts for expressing payment intents and settlement interfaces between AI Agents." ;
+  dcterms:modified "2025-11-10"^^xsd:date ;
+  owl:versionInfo "0.2.0" ;
+  owl:imports <https://w3id.org/agent-ontology/core> ;
+  owl:imports <https://w3id.org/agent-ontology/agent> .
 
 #################################################################
 # Payment Ontology

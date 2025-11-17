@@ -1,10 +1,10 @@
 {
   "@context": {
     "@version": 1.1,
-    "@vocab": "https://ns.slashlife.ai/agent/agent-profile#",
+    "@vocab": "https://w3id.org/agent-ontology/agent-profile#",
 
-    "agent-profile": "https://ns.slashlife.ai/agent/agent-profile#",
-    "agent": "https://ns.slashlife.ai/agent/agent#",
+    "agent-profile": "https://w3id.org/agent-ontology/agent-profile#",
+    "agent": "https://w3id.org/agent-ontology/agent#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 
     "AgentProfile": "agent-profile:AgentProfile",

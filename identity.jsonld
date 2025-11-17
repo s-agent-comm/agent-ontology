@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#did",
+    "@id": "https://w3id.org/agent-ontology/identity#did",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -26,13 +26,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#version",
+    "@id": "https://w3id.org/agent-ontology/identity#version",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -47,13 +47,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#title",
+    "@id": "https://w3id.org/agent-ontology/identity#title",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -68,7 +68,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#DecentralizedIdentifier",
+    "@id": "https://w3id.org/agent-ontology/identity#DecentralizedIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -84,12 +84,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#KeyManagementSystem",
+    "@id": "https://w3id.org/agent-ontology/identity#KeyManagementSystem",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -105,7 +105,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#kmsEndpoint",
+    "@id": "https://w3id.org/agent-ontology/identity#kmsEndpoint",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -116,7 +116,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#KeyManagementSystem"
+        "@id": "https://w3id.org/agent-ontology/identity#KeyManagementSystem"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -131,7 +131,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity",
+    "@id": "https://w3id.org/agent-ontology/identity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -153,7 +153,7 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -163,7 +163,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#managedByKMS",
+    "@id": "https://w3id.org/agent-ontology/identity#managedByKMS",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -174,7 +174,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -184,12 +184,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#KeyManagementSystem"
+        "@id": "https://w3id.org/agent-ontology/identity#KeyManagementSystem"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity",
+    "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -205,12 +205,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#AgentEntity"
+        "@id": "https://w3id.org/agent-ontology/core#AgentEntity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/identity#hasDID",
+    "@id": "https://w3id.org/agent-ontology/identity#hasDID",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -221,7 +221,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -231,7 +231,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#DecentralizedIdentifier"
+        "@id": "https://w3id.org/agent-ontology/identity#DecentralizedIdentifier"
       }
     ]
   }

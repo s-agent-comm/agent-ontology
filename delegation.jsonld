@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#intentConstraint",
+    "@id": "https://w3id.org/agent-ontology/delegation#intentConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -21,18 +21,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Intent"
+        "@id": "https://w3id.org/agent-ontology/core#Intent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#executionConstraint",
+    "@id": "https://w3id.org/agent-ontology/delegation#executionConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -42,12 +42,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#ExecutionConstraint"
+        "@id": "https://w3id.org/agent-ontology/delegation#ExecutionConstraint"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#Delegation",
+    "@id": "https://w3id.org/agent-ontology/delegation#Delegation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -63,18 +63,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Delegation"
+        "@id": "https://w3id.org/agent-ontology/core#Delegation"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#delegationId",
+    "@id": "https://w3id.org/agent-ontology/delegation#delegationId",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -89,7 +89,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#DelegationChain",
+    "@id": "https://w3id.org/agent-ontology/delegation#DelegationChain",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -105,7 +105,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#allowedCapability",
+    "@id": "https://w3id.org/agent-ontology/delegation#allowedCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -116,7 +116,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -126,12 +126,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#accountableFor",
+    "@id": "https://w3id.org/agent-ontology/delegation#accountableFor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -142,7 +142,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -152,12 +152,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#delegatesTo",
+    "@id": "https://w3id.org/agent-ontology/delegation#delegatesTo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -168,7 +168,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -178,12 +178,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#delegatedBy",
+    "@id": "https://w3id.org/agent-ontology/delegation#delegatedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -194,7 +194,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -204,18 +204,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#delegationScope",
+    "@id": "https://w3id.org/agent-ontology/delegation#delegationScope",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -225,18 +225,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#validUntil",
+    "@id": "https://w3id.org/agent-ontology/delegation#validUntil",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -251,13 +251,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#note",
+    "@id": "https://w3id.org/agent-ontology/delegation#note",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -272,7 +272,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation",
+    "@id": "https://w3id.org/agent-ontology/delegation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -294,10 +294,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/capability"
+        "@id": "https://w3id.org/agent-ontology/capability"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -307,13 +307,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#validFrom",
+    "@id": "https://w3id.org/agent-ontology/delegation#validFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -328,7 +328,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#recordedIn",
+    "@id": "https://w3id.org/agent-ontology/delegation#recordedIn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -339,7 +339,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -349,12 +349,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#TraceEvent"
+        "@id": "https://w3id.org/agent-ontology/core#TraceEvent"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#ExecutionConstraint",
+    "@id": "https://w3id.org/agent-ontology/delegation#ExecutionConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -370,13 +370,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#hasDelegation",
+    "@id": "https://w3id.org/agent-ontology/delegation#hasDelegation",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#DelegationChain"
+        "@id": "https://w3id.org/agent-ontology/delegation#DelegationChain"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -386,12 +386,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/delegation#DelegationScope",
+    "@id": "https://w3id.org/agent-ontology/delegation#DelegationScope",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

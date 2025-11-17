@@ -1,11 +1,11 @@
 {
   "@context": {
-    "@vocab": "https://ns.slashlife.ai/agent/ledger#",
-    "core": "https://ns.slashlife.ai/agent/core#",
-    "agent": "https://ns.slashlife.ai/agent/agent#",
-    "del": "https://ns.slashlife.ai/agent/delegation#",
-    "acc": "https://ns.slashlife.ai/agent/accountability#",
-    "cap": "https://ns.slashlife.ai/agent/capability#",
+    "@vocab": "https://w3id.org/agent-ontology/ledger#",
+    "core": "https://w3id.org/agent-ontology/core#",
+    "agent": "https://w3id.org/agent-ontology/agent#",
+    "del": "https://w3id.org/agent-ontology/delegation#",
+    "acc": "https://w3id.org/agent-ontology/accountability#",
+    "cap": "https://w3id.org/agent-ontology/capability#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 

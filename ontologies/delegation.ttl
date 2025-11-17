@@ -1,8 +1,8 @@
-@prefix del: <https://ns.slashlife.ai/agent/delegation#> .
-@prefix core: <https://ns.slashlife.ai/agent/core#> .
-@prefix cap: <https://ns.slashlife.ai/agent/capability#> .
-@prefix agent: <https://ns.slashlife.ai/agent/agent#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix del: <https://w3id.org/agent-ontology/delegation#> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix cap: <https://w3id.org/agent-ontology/capability#> .
+@prefix agent: <https://w3id.org/agent-ontology/agent#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -12,14 +12,16 @@
 # Ontology Header
 #################################################################
 
-<https://ns.slashlife.ai/agent/delegation>
-    a owl:Ontology ;
-    dct:title "Delegation Ontology" ;
-    dct:description "Defines the structured transfer of authority between AI Agents, including scope, actors, and constraints." ;
-    dct:modified "2025-11-10"^^xsd:date ;
-    owl:versionInfo "0.2.0" ;
-    owl:imports <https://ns.slashlife.ai/agent/core> ;
-    owl:imports <https://ns.slashlife.ai/agent/capability> .
+<https://w3id.org/agent-ontology/delegation>
+  dcterms:title "Delegation Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines the structured transfer of authority between AI Agents, including scope, actors, and constraints." ;
+  dcterms:modified "2025-11-10"^^xsd:date ;
+  owl:versionInfo "0.2.0" ;
+  owl:imports <https://w3id.org/agent-ontology/core> ;
+  owl:imports <https://w3id.org/agent-ontology/capability> .
 
 
 #################################################################

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#loggedAs",
+    "@id": "https://w3id.org/agent-ontology/intent#loggedAs",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -21,12 +21,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#RuntimeLedgerRecord"
+        "@id": "https://w3id.org/agent-ontology/ledger#RuntimeLedgerRecord"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#ActionType",
+    "@id": "https://w3id.org/agent-ontology/intent#ActionType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#authorizedBy",
+    "@id": "https://w3id.org/agent-ontology/intent#authorizedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -53,7 +53,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#Intent"
+        "@id": "https://w3id.org/agent-ontology/intent#Intent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -63,18 +63,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation#Delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation#Delegation"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#paramType",
+    "@id": "https://w3id.org/agent-ontology/intent#paramType",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#IntentParameter"
+        "@id": "https://w3id.org/agent-ontology/intent#IntentParameter"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -84,13 +84,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#hasParameter",
+    "@id": "https://w3id.org/agent-ontology/intent#hasParameter",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#Intent"
+        "@id": "https://w3id.org/agent-ontology/intent#Intent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -100,12 +100,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#IntentParameter"
+        "@id": "https://w3id.org/agent-ontology/intent#IntentParameter"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#IntentType",
+    "@id": "https://w3id.org/agent-ontology/intent#IntentType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#Intent",
+    "@id": "https://w3id.org/agent-ontology/intent#Intent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -137,13 +137,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#executedIn",
+    "@id": "https://w3id.org/agent-ontology/intent#executedIn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -153,12 +153,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/core#ExecutionContext"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent",
+    "@id": "https://w3id.org/agent-ontology/intent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -180,13 +180,13 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/delegation"
+        "@id": "https://w3id.org/agent-ontology/delegation"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger"
+        "@id": "https://w3id.org/agent-ontology/ledger"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -196,13 +196,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#producesAction",
+    "@id": "https://w3id.org/agent-ontology/intent#producesAction",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#Intent"
+        "@id": "https://w3id.org/agent-ontology/intent#Intent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -212,18 +212,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#hasIntentType",
+    "@id": "https://w3id.org/agent-ontology/intent#hasIntentType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#Intent"
+        "@id": "https://w3id.org/agent-ontology/intent#Intent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -233,18 +233,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#IntentType"
+        "@id": "https://w3id.org/agent-ontology/intent#IntentType"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#paramValue",
+    "@id": "https://w3id.org/agent-ontology/intent#paramValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#IntentParameter"
+        "@id": "https://w3id.org/agent-ontology/intent#IntentParameter"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -254,7 +254,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#IntentParameter",
+    "@id": "https://w3id.org/agent-ontology/intent#IntentParameter",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -270,13 +270,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#hasActionType",
+    "@id": "https://w3id.org/agent-ontology/intent#hasActionType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Action"
+        "@id": "https://w3id.org/agent-ontology/core#Action"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -286,18 +286,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#ActionType"
+        "@id": "https://w3id.org/agent-ontology/intent#ActionType"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/intent#paramName",
+    "@id": "https://w3id.org/agent-ontology/intent#paramName",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#IntentParameter"
+        "@id": "https://w3id.org/agent-ontology/intent#IntentParameter"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [

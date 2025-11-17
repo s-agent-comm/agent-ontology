@@ -1,12 +1,12 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#classifiedAs",
+    "@id": "https://w3id.org/agent-ontology/capability#classifiedAs",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -16,12 +16,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityClass"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityClass"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#OutputSchema",
+    "@id": "https://w3id.org/agent-ontology/capability#OutputSchema",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -37,13 +37,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#capabilityVersion",
+    "@id": "https://w3id.org/agent-ontology/capability#capabilityVersion",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityProvenance"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityProvenance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#allowedContext",
+    "@id": "https://w3id.org/agent-ontology/capability#allowedContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -69,7 +69,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityConstraint"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityConstraint"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -84,13 +84,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#producesOutput",
+    "@id": "https://w3id.org/agent-ontology/capability#producesOutput",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -100,12 +100,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#OutputSchema"
+        "@id": "https://w3id.org/agent-ontology/capability#OutputSchema"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#InputSchema",
+    "@id": "https://w3id.org/agent-ontology/capability#InputSchema",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -121,13 +121,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#executionPattern",
+    "@id": "https://w3id.org/agent-ontology/capability#executionPattern",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -137,18 +137,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#ExecutionPattern"
+        "@id": "https://w3id.org/agent-ontology/capability#ExecutionPattern"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#hasConstraint",
+    "@id": "https://w3id.org/agent-ontology/capability#hasConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -158,12 +158,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityConstraint"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityConstraint"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#PrimitiveCapability",
+    "@id": "https://w3id.org/agent-ontology/capability#PrimitiveCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -179,18 +179,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#description",
+    "@id": "https://w3id.org/agent-ontology/capability#description",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -205,7 +205,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#CompositeCapability",
+    "@id": "https://w3id.org/agent-ontology/capability#CompositeCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -221,18 +221,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#requiresInput",
+    "@id": "https://w3id.org/agent-ontology/capability#requiresInput",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -242,12 +242,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#InputSchema"
+        "@id": "https://w3id.org/agent-ontology/capability#InputSchema"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#CapabilityProvenance",
+    "@id": "https://w3id.org/agent-ontology/capability#CapabilityProvenance",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -263,7 +263,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#CapabilityClass",
+    "@id": "https://w3id.org/agent-ontology/capability#CapabilityClass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -279,13 +279,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#sourceSpec",
+    "@id": "https://w3id.org/agent-ontology/capability#sourceSpec",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityProvenance"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityProvenance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -300,7 +300,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#ExecutionPattern",
+    "@id": "https://w3id.org/agent-ontology/capability#ExecutionPattern",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -316,13 +316,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#capabilityId",
+    "@id": "https://w3id.org/agent-ontology/capability#capabilityId",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -337,7 +337,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#CapabilityConstraint",
+    "@id": "https://w3id.org/agent-ontology/capability#CapabilityConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#includes",
+    "@id": "https://w3id.org/agent-ontology/capability#includes",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -364,7 +364,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CompositeCapability"
+        "@id": "https://w3id.org/agent-ontology/capability#CompositeCapability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -374,18 +374,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#prohibitedContext",
+    "@id": "https://w3id.org/agent-ontology/capability#prohibitedContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityConstraint"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityConstraint"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -400,13 +400,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#requiresPermission",
+    "@id": "https://w3id.org/agent-ontology/capability#requiresPermission",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityConstraint"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityConstraint"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -421,7 +421,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability",
+    "@id": "https://w3id.org/agent-ontology/capability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -443,7 +443,7 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -453,13 +453,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#provenance",
+    "@id": "https://w3id.org/agent-ontology/capability#provenance",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -469,12 +469,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#CapabilityProvenance"
+        "@id": "https://w3id.org/agent-ontology/capability#CapabilityProvenance"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#dependsOnCapability",
+    "@id": "https://w3id.org/agent-ontology/capability#dependsOnCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -485,7 +485,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -495,12 +495,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/capability#Capability"
+        "@id": "https://w3id.org/agent-ontology/capability#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/capability#Capability",
+    "@id": "https://w3id.org/agent-ontology/capability#Capability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -516,7 +516,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Capability"
+        "@id": "https://w3id.org/agent-ontology/core#Capability"
       }
     ]
   }

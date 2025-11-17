@@ -1,12 +1,12 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#hasSecurityContext",
+    "@id": "https://w3id.org/agent-ontology/execution-context#hasSecurityContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/intent#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -16,18 +16,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#SecurityContext"
+        "@id": "https://w3id.org/agent-ontology/execution-context#SecurityContext"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#inputValue",
+    "@id": "https://w3id.org/agent-ontology/execution-context#inputValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#InputState"
+        "@id": "https://w3id.org/agent-ontology/execution-context#InputState"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#ResourceConstraint",
+    "@id": "https://w3id.org/agent-ontology/execution-context#ResourceConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -53,13 +53,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#hasBudget",
+    "@id": "https://w3id.org/agent-ontology/execution-context#hasBudget",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -69,12 +69,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#Budget"
+        "@id": "https://w3id.org/agent-ontology/execution-context#Budget"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#SecurityContext",
+    "@id": "https://w3id.org/agent-ontology/execution-context#SecurityContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -90,13 +90,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#maxRequests",
+    "@id": "https://w3id.org/agent-ontology/execution-context#maxRequests",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#RateLimit"
+        "@id": "https://w3id.org/agent-ontology/execution-context#RateLimit"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -106,7 +106,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#currency",
+    "@id": "https://w3id.org/agent-ontology/execution-context#currency",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -117,7 +117,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#Budget"
+        "@id": "https://w3id.org/agent-ontology/execution-context#Budget"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -127,7 +127,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#RateLimit",
+    "@id": "https://w3id.org/agent-ontology/execution-context#RateLimit",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -143,7 +143,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#constraintType",
+    "@id": "https://w3id.org/agent-ontology/execution-context#constraintType",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -154,7 +154,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ResourceConstraint"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ResourceConstraint"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -164,13 +164,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#constraintValue",
+    "@id": "https://w3id.org/agent-ontology/execution-context#constraintValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ResourceConstraint"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ResourceConstraint"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment",
+    "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -196,13 +196,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#usesKeySlot",
+    "@id": "https://w3id.org/agent-ontology/execution-context#usesKeySlot",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#SecurityContext"
+        "@id": "https://w3id.org/agent-ontology/execution-context#SecurityContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -212,7 +212,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context",
+    "@id": "https://w3id.org/agent-ontology/execution-context",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -234,10 +234,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent"
+        "@id": "https://w3id.org/agent-ontology/intent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -247,7 +247,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#OutputState",
+    "@id": "https://w3id.org/agent-ontology/execution-context#OutputState",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -263,13 +263,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#hasRateLimit",
+    "@id": "https://w3id.org/agent-ontology/execution-context#hasRateLimit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -279,18 +279,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#RateLimit"
+        "@id": "https://w3id.org/agent-ontology/execution-context#RateLimit"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#outputValue",
+    "@id": "https://w3id.org/agent-ontology/execution-context#outputValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#OutputState"
+        "@id": "https://w3id.org/agent-ontology/execution-context#OutputState"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -300,13 +300,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#hasResourceConstraint",
+    "@id": "https://w3id.org/agent-ontology/execution-context#hasResourceConstraint",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -316,18 +316,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ResourceConstraint"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ResourceConstraint"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#perSeconds",
+    "@id": "https://w3id.org/agent-ontology/execution-context#perSeconds",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#RateLimit"
+        "@id": "https://w3id.org/agent-ontology/execution-context#RateLimit"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -337,13 +337,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#amount",
+    "@id": "https://w3id.org/agent-ontology/execution-context#amount",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#Budget"
+        "@id": "https://w3id.org/agent-ontology/execution-context#Budget"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#InputState",
+    "@id": "https://w3id.org/agent-ontology/execution-context#InputState",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -369,13 +369,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#hasEnvironment",
+    "@id": "https://w3id.org/agent-ontology/execution-context#hasEnvironment",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/intent#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -385,44 +385,44 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#outputState",
+    "@id": "https://w3id.org/agent-ontology/execution-context#outputState",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/intent#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#OutputState"
+        "@id": "https://w3id.org/agent-ontology/execution-context#OutputState"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#inputState",
+    "@id": "https://w3id.org/agent-ontology/execution-context#inputState",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/intent#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/intent#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#InputState"
+        "@id": "https://w3id.org/agent-ontology/execution-context#InputState"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#envType",
+    "@id": "https://w3id.org/agent-ontology/execution-context#envType",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -433,7 +433,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#ExecutionEnvironment"
+        "@id": "https://w3id.org/agent-ontology/execution-context#ExecutionEnvironment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -443,7 +443,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#Budget",
+    "@id": "https://w3id.org/agent-ontology/execution-context#Budget",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -459,13 +459,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/execution-context#usesTEE",
+    "@id": "https://w3id.org/agent-ontology/execution-context#usesTEE",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/execution-context#SecurityContext"
+        "@id": "https://w3id.org/agent-ontology/execution-context#SecurityContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [

@@ -1,8 +1,8 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#StandardLanguage",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#StandardLanguage",
     "@type": [
-      "https://ns.slashlife.ai/agent/agent-profile#LanguagePreference"
+      "https://w3id.org/agent-ontology/agent-profile#LanguagePreference"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#Personality",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#Personality",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -27,33 +27,33 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#DefaultProfile",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#DefaultProfile",
     "@type": [
-      "https://ns.slashlife.ai/agent/agent-profile#AgentProfile"
+      "https://w3id.org/agent-ontology/agent-profile#AgentProfile"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Default Agent Profile"
       }
     ],
-    "https://ns.slashlife.ai/agent/agent-profile#hasPersonality": [
+    "https://w3id.org/agent-ontology/agent-profile#hasPersonality": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#NeutralPersonality"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#NeutralPersonality"
       }
     ],
-    "https://ns.slashlife.ai/agent/agent-profile#hasToneModel": [
+    "https://w3id.org/agent-ontology/agent-profile#hasToneModel": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#BalancedTone"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#BalancedTone"
       }
     ],
-    "https://ns.slashlife.ai/agent/agent-profile#usesLanguage": [
+    "https://w3id.org/agent-ontology/agent-profile#usesLanguage": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#StandardLanguage"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#StandardLanguage"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#AgentProfile",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#AgentProfile",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -69,9 +69,9 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#BalancedTone",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#BalancedTone",
     "@type": [
-      "https://ns.slashlife.ai/agent/agent-profile#ToneModel"
+      "https://w3id.org/agent-ontology/agent-profile#ToneModel"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile",
+    "@id": "https://w3id.org/agent-ontology/agent-profile",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -102,7 +102,7 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#hasToneModel",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#hasToneModel",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -123,7 +123,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#AgentProfile"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#AgentProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -133,12 +133,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#ToneModel"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#ToneModel"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#usesLanguage",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#usesLanguage",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -149,7 +149,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#AgentProfile"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#AgentProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -159,12 +159,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#LanguagePreference"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#LanguagePreference"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#hasPersonality",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#hasPersonality",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -175,7 +175,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#AgentProfile"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#AgentProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -185,12 +185,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#Personality"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#Personality"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#ToneModel",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#ToneModel",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -206,7 +206,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#LanguagePreference",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#LanguagePreference",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -222,9 +222,9 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent-profile#NeutralPersonality",
+    "@id": "https://w3id.org/agent-ontology/agent-profile#NeutralPersonality",
     "@type": [
-      "https://ns.slashlife.ai/agent/agent-profile#Personality"
+      "https://w3id.org/agent-ontology/agent-profile#Personality"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {

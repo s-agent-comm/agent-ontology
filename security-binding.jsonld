@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#allowedAction",
+    "@id": "https://w3id.org/agent-ontology/security-binding#allowedAction",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#AccessControlRule"
+        "@id": "https://w3id.org/agent-ontology/security-binding#AccessControlRule"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -21,13 +21,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#attestationReport",
+    "@id": "https://w3id.org/agent-ontology/security-binding#attestationReport",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#HardwareRootOfTrust"
+        "@id": "https://w3id.org/agent-ontology/security-binding#HardwareRootOfTrust"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -42,13 +42,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#hasDataHandlingPolicy",
+    "@id": "https://w3id.org/agent-ontology/security-binding#hasDataHandlingPolicy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/core#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -58,18 +58,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#DataHandlingPolicy"
+        "@id": "https://w3id.org/agent-ontology/security-binding#DataHandlingPolicy"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#anchoredBy",
+    "@id": "https://w3id.org/agent-ontology/security-binding#anchoredBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -79,20 +79,20 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#HardwareRootOfTrust"
+        "@id": "https://w3id.org/agent-ontology/security-binding#HardwareRootOfTrust"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/core#hasCapability",
+    "@id": "https://w3id.org/agent-ontology/core#hasCapability",
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#requiresCapability"
+        "@id": "https://w3id.org/agent-ontology/core#requiresCapability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#SecurityBinding",
+    "@id": "https://w3id.org/agent-ontology/security-binding#SecurityBinding",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#HardwareRootOfTrust",
+    "@id": "https://w3id.org/agent-ontology/security-binding#HardwareRootOfTrust",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -124,23 +124,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#CriticalCapability",
+    "@id": "https://w3id.org/agent-ontology/security-binding#CriticalCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Capability"
+        "@id": "https://w3id.org/agent-ontology/core#Capability"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#RestrictedCapability"
+        "@id": "https://w3id.org/agent-ontology/security-binding#RestrictedCapability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#signsRecord",
+    "@id": "https://w3id.org/agent-ontology/security-binding#signsRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -151,7 +151,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -161,12 +161,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger#LedgerRecord"
+        "@id": "https://w3id.org/agent-ontology/ledger#LedgerRecord"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#AccessControlRule",
+    "@id": "https://w3id.org/agent-ontology/security-binding#AccessControlRule",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -182,13 +182,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#hasAccessControlRule",
+    "@id": "https://w3id.org/agent-ontology/security-binding#hasAccessControlRule",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#ExecutionContext"
+        "@id": "https://w3id.org/agent-ontology/core#ExecutionContext"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -198,12 +198,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#AccessControlRule"
+        "@id": "https://w3id.org/agent-ontology/security-binding#AccessControlRule"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#restrictedToRole",
+    "@id": "https://w3id.org/agent-ontology/security-binding#restrictedToRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -214,7 +214,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#AccessControlRule"
+        "@id": "https://w3id.org/agent-ontology/security-binding#AccessControlRule"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -224,13 +224,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#encryptionRequired",
+    "@id": "https://w3id.org/agent-ontology/security-binding#encryptionRequired",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#DataHandlingPolicy"
+        "@id": "https://w3id.org/agent-ontology/security-binding#DataHandlingPolicy"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -240,7 +240,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding",
+    "@id": "https://w3id.org/agent-ontology/security-binding",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -262,13 +262,13 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent"
+        "@id": "https://w3id.org/agent-ontology/agent"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/ledger"
+        "@id": "https://w3id.org/agent-ontology/ledger"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -278,13 +278,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#trustLevel",
+    "@id": "https://w3id.org/agent-ontology/security-binding#trustLevel",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#HardwareRootOfTrust"
+        "@id": "https://w3id.org/agent-ontology/security-binding#HardwareRootOfTrust"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -299,7 +299,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#TrustAnchor",
+    "@id": "https://w3id.org/agent-ontology/security-binding#TrustAnchor",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -315,13 +315,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#keyValue",
+    "@id": "https://w3id.org/agent-ontology/security-binding#keyValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -336,18 +336,18 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#RestrictedCapability",
+    "@id": "https://w3id.org/agent-ontology/security-binding#RestrictedCapability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Capability"
+        "@id": "https://w3id.org/agent-ontology/core#Capability"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#IntentAlignsWithTask",
+    "@id": "https://w3id.org/agent-ontology/security-binding#IntentAlignsWithTask",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -358,7 +358,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Intent"
+        "@id": "https://w3id.org/agent-ontology/core#Intent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -368,12 +368,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Task"
+        "@id": "https://w3id.org/agent-ontology/core#Task"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial",
+    "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -389,13 +389,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#keyType",
+    "@id": "https://w3id.org/agent-ontology/security-binding#keyType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -405,12 +405,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyType"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyType"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#policyURI",
+    "@id": "https://w3id.org/agent-ontology/security-binding#policyURI",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -421,7 +421,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#DataHandlingPolicy"
+        "@id": "https://w3id.org/agent-ontology/security-binding#DataHandlingPolicy"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -431,13 +431,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#hasKeyMaterial",
+    "@id": "https://w3id.org/agent-ontology/security-binding#hasKeyMaterial",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#Agent"
+        "@id": "https://w3id.org/agent-ontology/agent#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -447,12 +447,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#KeyMaterial"
+        "@id": "https://w3id.org/agent-ontology/security-binding#KeyMaterial"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#KeyType",
+    "@id": "https://w3id.org/agent-ontology/security-binding#KeyType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -468,13 +468,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#verifiedBy",
+    "@id": "https://w3id.org/agent-ontology/security-binding#verifiedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#HardwareRootOfTrust"
+        "@id": "https://w3id.org/agent-ontology/security-binding#HardwareRootOfTrust"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -484,12 +484,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/security-binding#TrustAnchor"
+        "@id": "https://w3id.org/agent-ontology/security-binding#TrustAnchor"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/security-binding#DataHandlingPolicy",
+    "@id": "https://w3id.org/agent-ontology/security-binding#DataHandlingPolicy",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

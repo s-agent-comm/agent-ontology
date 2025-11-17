@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#HealthCheckSpec",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#HealthCheckSpec",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/economic#Wallet",
+    "@id": "https://w3id.org/agent-ontology/economic#Wallet",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -33,13 +33,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#state",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#state",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/contract#Contract",
+    "@id": "https://w3id.org/agent-ontology/contract#Contract",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -60,13 +60,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#dependsOn",
+    "@id": "https://w3id.org/agent-ontology/agent#dependsOn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#SystemIntegration"
+        "@id": "https://w3id.org/agent-ontology/agent#SystemIntegration"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -76,28 +76,28 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#AgentEntity"
+        "@id": "https://w3id.org/agent-ontology/core#AgentEntity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#trigger",
+    "@id": "https://w3id.org/agent-ontology/agent#trigger",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#OperationalProfile"
+        "@id": "https://w3id.org/agent-ontology/agent#OperationalProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#Trigger"
+        "@id": "https://w3id.org/agent-ontology/agent#Trigger"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent",
+    "@id": "https://w3id.org/agent-ontology/agent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -119,10 +119,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core"
+        "@id": "https://w3id.org/agent-ontology/core"
       },
       {
-        "@id": "https://ns.slashlife.ai/agent/identity"
+        "@id": "https://w3id.org/agent-ontology/identity"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -132,7 +132,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#IdentityBinding",
+    "@id": "https://w3id.org/agent-ontology/agent#IdentityBinding",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -143,23 +143,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#identity",
+    "@id": "https://w3id.org/agent-ontology/agent#identity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#IdentitySet"
+        "@id": "https://w3id.org/agent-ontology/agent#IdentitySet"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#IdentityBinding"
+        "@id": "https://w3id.org/agent-ontology/agent#IdentityBinding"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#IdentitySet",
+    "@id": "https://w3id.org/agent-ontology/agent#IdentitySet",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -170,13 +170,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#hasIdentity",
+    "@id": "https://w3id.org/agent-ontology/agent#hasIdentity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -186,12 +186,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/identity#AgentIdentity"
+        "@id": "https://w3id.org/agent-ontology/identity#AgentIdentity"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#Trigger",
+    "@id": "https://w3id.org/agent-ontology/agent#Trigger",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -202,29 +202,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#economicInterfaces",
+    "@id": "https://w3id.org/agent-ontology/agent#economicInterfaces",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/economic#WalletSet"
+        "@id": "https://w3id.org/agent-ontology/economic#WalletSet"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#objective",
+    "@id": "https://w3id.org/agent-ontology/agent#objective",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#PurposeRole"
+        "@id": "https://w3id.org/agent-ontology/agent#PurposeRole"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -239,29 +239,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#healthCheck",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#healthCheck",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#HealthCheckSpec"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#HealthCheckSpec"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/contract#termsUri",
+    "@id": "https://w3id.org/agent-ontology/contract#termsUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/contract#Contract"
+        "@id": "https://w3id.org/agent-ontology/contract#Contract"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -271,7 +271,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#InterfaceSpec",
+    "@id": "https://w3id.org/agent-ontology/agent#InterfaceSpec",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -282,61 +282,61 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#identityInterfaces",
+    "@id": "https://w3id.org/agent-ontology/agent#identityInterfaces",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#IdentitySet"
+        "@id": "https://w3id.org/agent-ontology/agent#IdentitySet"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#operationalTriggersAndIO",
+    "@id": "https://w3id.org/agent-ontology/agent#operationalTriggersAndIO",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#OperationalProfile"
+        "@id": "https://w3id.org/agent-ontology/agent#OperationalProfile"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#decommissionRecord",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#decommissionRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#DecommissionRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#DecommissionRecord"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#purposeAndRole",
+    "@id": "https://w3id.org/agent-ontology/agent#purposeAndRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -346,12 +346,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#PurposeRole"
+        "@id": "https://w3id.org/agent-ontology/agent#PurposeRole"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/contract#ContractSet",
+    "@id": "https://w3id.org/agent-ontology/contract#ContractSet",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -362,23 +362,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#systemIntegrationAndDependencies",
+    "@id": "https://w3id.org/agent-ontology/agent#systemIntegrationAndDependencies",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#SystemIntegration"
+        "@id": "https://w3id.org/agent-ontology/agent#SystemIntegration"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#DecommissionRecord",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#DecommissionRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -389,39 +389,39 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#lifecycleManagement",
+    "@id": "https://w3id.org/agent-ontology/agent#lifecycleManagement",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#output",
+    "@id": "https://w3id.org/agent-ontology/agent#output",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#OperationalProfile"
+        "@id": "https://w3id.org/agent-ontology/agent#OperationalProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#OutputSpec"
+        "@id": "https://w3id.org/agent-ontology/agent#OutputSpec"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#OperationalProfile",
+    "@id": "https://w3id.org/agent-ontology/agent#OperationalProfile",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -437,45 +437,45 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#contractualInterfaces",
+    "@id": "https://w3id.org/agent-ontology/agent#contractualInterfaces",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/contract#ContractSet"
+        "@id": "https://w3id.org/agent-ontology/contract#ContractSet"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#genesisRecord",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#genesisRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#LifecycleRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#LifecycleRecord"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/lifecycle#GenesisRecord"
+        "@id": "https://w3id.org/agent-ontology/lifecycle#GenesisRecord"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/economic#address",
+    "@id": "https://w3id.org/agent-ontology/economic#address",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/economic#Wallet"
+        "@id": "https://w3id.org/agent-ontology/economic#Wallet"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -485,29 +485,29 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#interface",
+    "@id": "https://w3id.org/agent-ontology/agent#interface",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#SystemIntegration"
+        "@id": "https://w3id.org/agent-ontology/agent#SystemIntegration"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#InterfaceSpec"
+        "@id": "https://w3id.org/agent-ontology/agent#InterfaceSpec"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#keyManagementSystem",
+    "@id": "https://w3id.org/agent-ontology/agent#keyManagementSystem",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#IdentityBinding"
+        "@id": "https://w3id.org/agent-ontology/agent#IdentityBinding"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -517,7 +517,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#PurposeRole",
+    "@id": "https://w3id.org/agent-ontology/agent#PurposeRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -533,7 +533,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#hasProfile",
+    "@id": "https://w3id.org/agent-ontology/agent#hasProfile",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -544,7 +544,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/core#Agent"
+        "@id": "https://w3id.org/agent-ontology/core#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -554,28 +554,28 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent-profile#AgentProfile"
+        "@id": "https://w3id.org/agent-ontology/agent-profile#AgentProfile"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/contract#contract",
+    "@id": "https://w3id.org/agent-ontology/contract#contract",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/contract#ContractSet"
+        "@id": "https://w3id.org/agent-ontology/contract#ContractSet"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/contract#Contract"
+        "@id": "https://w3id.org/agent-ontology/contract#Contract"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/lifecycle#GenesisRecord",
+    "@id": "https://w3id.org/agent-ontology/lifecycle#GenesisRecord",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -586,23 +586,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/economic#wallet",
+    "@id": "https://w3id.org/agent-ontology/economic#wallet",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/economic#WalletSet"
+        "@id": "https://w3id.org/agent-ontology/economic#WalletSet"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/economic#Wallet"
+        "@id": "https://w3id.org/agent-ontology/economic#Wallet"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#SystemIntegration",
+    "@id": "https://w3id.org/agent-ontology/agent#SystemIntegration",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -618,7 +618,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/economic#WalletSet",
+    "@id": "https://w3id.org/agent-ontology/economic#WalletSet",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -629,13 +629,13 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#owner",
+    "@id": "https://w3id.org/agent-ontology/agent#owner",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#PurposeRole"
+        "@id": "https://w3id.org/agent-ontology/agent#PurposeRole"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -650,7 +650,7 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#InputSpec",
+    "@id": "https://w3id.org/agent-ontology/agent#InputSpec",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -661,23 +661,23 @@
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#input",
+    "@id": "https://w3id.org/agent-ontology/agent#input",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#OperationalProfile"
+        "@id": "https://w3id.org/agent-ontology/agent#OperationalProfile"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://ns.slashlife.ai/agent/agent#InputSpec"
+        "@id": "https://w3id.org/agent-ontology/agent#InputSpec"
       }
     ]
   },
   {
-    "@id": "https://ns.slashlife.ai/agent/agent#OutputSpec",
+    "@id": "https://w3id.org/agent-ontology/agent#OutputSpec",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

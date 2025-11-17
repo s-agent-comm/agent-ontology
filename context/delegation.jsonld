@@ -1,8 +1,8 @@
 {
   "@context": {
-    "@vocab": "https://ns.slashlife.ai/agent/delegation#",
-    "core": "https://ns.slashlife.ai/agent/core#",
-    "cap": "https://ns.slashlife.ai/agent/capability#",
+    "@vocab": "https://w3id.org/agent-ontology/delegation#",
+    "core": "https://w3id.org/agent-ontology/core#",
+    "cap": "https://w3id.org/agent-ontology/capability#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 

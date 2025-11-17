@@ -1,5 +1,5 @@
 {
-  description = "A flake for building the Agent Ontology";
+  description = "A flake for developing the Agent Ontology";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -7,10 +7,29 @@
 
   outputs = { self, nixpkgs }:
     let
-      supportedSystems = [ "x86_64-linux" "aarch64-darwin" ];
+      supportedSystems = [ "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
     in
     {
+      devShells = forAllSystems (system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+          pythonPackages = ps: with ps; [
+            pyshacl
+            rdflib
+          ];
+          pythonEnv = pkgs.python3.withPackages pythonPackages;
+        in
+        {
+          default = pkgs.mkShell {
+            packages = [
+              pythonEnv
+              pkgs.jena
+            ];
+          };
+        }
+      );
+
       packages = forAllSystems (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
@@ -20,7 +39,7 @@
             name = "agent-ontology";
             src = self;
             buildPhase = ''
-              cat *.ttl > agent-ontology.ttl
+              cat ontologies/*.ttl > agent-ontology.ttl
             '';
             installPhase = ''
               mkdir -p $out
