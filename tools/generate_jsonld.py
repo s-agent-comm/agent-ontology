@@ -1,14 +1,18 @@
 import glob
 from pathlib import Path
+import os
 from rdflib import Graph
 
 def convert_ttl_to_jsonld():
     """
     Converts all Turtle files in the 'ontologies/' directory to JSON-LD format
-    and saves them in the project's root directory.
+    and saves them in the 'dist/' directory.
     """
     ontologies_dir = Path("ontologies")
-    output_dir = Path(".")
+    output_dir = Path("dist")
+
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
 
     ttl_files = list(ontologies_dir.glob("*.ttl"))
 

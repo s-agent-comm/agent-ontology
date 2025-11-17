@@ -24,7 +24,7 @@
           default = pkgs.mkShell {
             packages = [
               pythonEnv
-              pkgs.jena
+              pkgs.apache-jena
             ];
           };
         }
