@@ -68,7 +68,7 @@
               cat > gh-pages/version.json <<JSON
               {
                 "name": "agent-ontology",
-                "commit": "${COMMIT_HASH}",
+                "commit": "${COMMIT_HASH:-unknown}",
                 "build_date": "${BUILD_DATE}",
                 "nix_system": "${system}",
                 "nixpkgs": "${nixpkgs.url}"
