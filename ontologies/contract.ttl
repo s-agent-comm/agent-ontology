@@ -1,0 +1,31 @@
+@prefix : <https://w3id.org/agent-ontology/contract#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/agent-ontology/contract>
+  dcterms:title "Contract Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts related to contractual aspects of an AI Agent." ;
+  owl:versionInfo "0.1.0" .
+
+#################################################################
+#   Contractual Interfaces
+#################################################################
+
+:ContractSet a owl:Class ;
+    rdfs:label "ContractSet" .
+
+:Contract a owl:Class ;
+    rdfs:label "Contract" .
+
+:contract a owl:ObjectProperty ;
+    rdfs:domain :ContractSet ;
+    rdfs:range :Contract .
+
+:termsUri a owl:DatatypeProperty ;
+    rdfs:domain :Contract ;
+    rdfs:range xsd:anyURI .

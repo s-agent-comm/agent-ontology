@@ -1,0 +1,45 @@
+@prefix : <https://w3id.org/agent-ontology/lifecycle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/agent-ontology/lifecycle>
+  dcterms:title "Lifecycle Ontology" ;
+  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  dcterms:description "Defines concepts related to the lifecycle of an AI Agent." ;
+  owl:versionInfo "0.1.0" .
+
+#################################################################
+#   Lifecycle Management
+#################################################################
+
+:LifecycleRecord a owl:Class ;
+    rdfs:label "LifecycleRecord" .
+
+:genesisRecord a owl:ObjectProperty ;
+    rdfs:domain :LifecycleRecord ;
+    rdfs:range :GenesisRecord .
+
+:GenesisRecord a owl:Class ;
+    rdfs:label "GenesisRecord" .
+
+:state a owl:DatatypeProperty ;
+    rdfs:domain :LifecycleRecord ;
+    rdfs:range xsd:string .
+
+:healthCheck a owl:ObjectProperty ;
+    rdfs:domain :LifecycleRecord ;
+    rdfs:range :HealthCheckSpec .
+
+:HealthCheckSpec a owl:Class ;
+    rdfs:label "HealthCheckSpec" .
+
+:decommissionRecord a owl:ObjectProperty ;
+    rdfs:domain :LifecycleRecord ;
+    rdfs:range :DecommissionRecord .
+
+:DecommissionRecord a owl:Class ;
+    rdfs:label "DecommissionRecord" .
