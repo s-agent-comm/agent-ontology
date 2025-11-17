@@ -1,6 +1,31 @@
 # Agent Ontology Overview
 
-This directory is the core of the Agent CG Ontology project, containing all formal definitions of the semantic model for AI Agents. It is structured to provide a clear separation between the core ontology modules, their corresponding JSON-LD contexts, and validation profiles.
+This project is the **core ontology** of the [Semantic Agent Communication W3C Community Group (SAC-CG)](https://www.w3.org/community/s-agent-comm/).  
+It contains all formal definitions of the semantic model for executable AI Agents and is structured to separate the ontology modules, their corresponding JSON-LD contexts, and validation profiles.
+
+## Conceptual Overview: Executable Agent Semantics
+
+Unlike traditional ontologies that merely describe data or domain concepts, the **Agent Ontology** defines the *executable semantics* of AI Agents — entities capable of autonomous reasoning, delegation, and verifiable interaction across systems.  
+It provides the formal vocabulary and logical bindings necessary for agents to operate within **trustworthy, identity-bound, and auditable environments**.
+
+This ontology is designed as the semantic foundation for:
+
+- **Identity-Bound Agents** — Each agent instance is linked to a verifiable identifier (DID/VC), allowing persistent identity and cryptographic accountability.  
+- **Delegation & Contractual Semantics** — Models how agents delegate authority, form verifiable contracts, and record obligations or outcomes on ledgers.  
+- **Verifiable Grammar** — Establishes the syntax-ontology interface enabling agents to reason, communicate, and execute tasks under machine-verifiable grammar constraints.  
+- **Interoperable Multi-Agent Frameworks** — Provides a shared vocabulary layer for interoperability among different agent systems (human, AI, or hybrid).
+
+In practice, this ontology functions as both:
+1. a **formal specification** (OWL/RDF), and  
+2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
+
+## Why This Ontology Matters
+
+This project serves as the semantic core of the **W3C Semantic Agent Communication Community Group (SAC-CG)**.  
+Its goal is to standardize how AI agents represent **identity, intent, delegation, and accountability**, ensuring that multi-agent ecosystems remain transparent, auditable, and interoperable across jurisdictions and institutions.
+
+The ontology aligns with emerging frameworks such as the **EU AI Act**, **EUDI Wallet**, and **ISO/IEC 42001**, providing a common basis for regulatory-compliant agent behavior and trustworthy automation.  
+By establishing a verifiable semantic layer for agent interoperability, this project contributes to the next generation of **AI governance, semantic infrastructure, and computational law.**
 
 ## Directory Structure
 
