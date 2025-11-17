@@ -7,7 +7,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 
 <https://w3id.org/agent-ontology/core>
         dcterms:title         "Core Agent Ontology";
-        dcterms:license       <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document>;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:rightsHolder  "Semantic Agent Communication Community Group";
         dcterms:creator       "Tyson Chen (SlashLife AI)";
         dcterms:description   "The foundational ontology for AI Agent semantics, defining core concepts for communication, delegation, and execution.";

@@ -1,0 +1,7 @@
+{
+  "name": "agent-ontology",
+  "commit": "unknown",
+  "build_date": "2025-11-17T20:11:11Z",
+  "nix_system": "x86_64-linux",
+  "nixpkgs": "github:NixOS/nixpkgs/nixos-unstable"
+}
