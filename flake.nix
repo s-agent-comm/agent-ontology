@@ -5,13 +5,19 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
-      supportedSystems = [ "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
+      supportedSystems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+        "x86_64-darwin"
+      ];
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
     in
     {
-      devShells = forAllSystems (system:
+      devShells = forAllSystems (
+        system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
           pythonEnv = pkgs.python3;
@@ -21,7 +27,7 @@
             packages = [
               pythonEnv
               pkgs.apache-jena
-              pkgs.openjdk17       # ← 加這個
+              pkgs.openjdk17 # ← 加這個
               pkgs.git
               pkgs.makeWrapper
             ];
@@ -48,7 +54,8 @@
         }
       );
 
-      packages = forAllSystems (system:
+      packages = forAllSystems (
+        system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
         in
@@ -57,7 +64,10 @@
             name = "agent-ontology";
             src = self;
 
-            buildInputs = [ pkgs.apache-jena pkgs.openjdk17 ];  # ← 加這個
+            buildInputs = [
+              pkgs.apache-jena
+              pkgs.openjdk17
+            ]; # ← 加這個
 
             buildPhase = ''
               mkdir -p $out
@@ -74,7 +84,12 @@
           gh-pages = pkgs.stdenv.mkDerivation {
             name = "agent-ontology-gh-pages";
             src = self;
-            buildInputs = [ pkgs.apache-jena pkgs.openjdk17 pkgs.coreutils pkgs.findutils ];  # ← 同樣加
+            buildInputs = [
+              pkgs.apache-jena
+              pkgs.openjdk17
+              pkgs.coreutils
+              pkgs.findutils
+            ];
 
             buildPhase = ''
               export JAVA_HOME=${pkgs.openjdk17}
@@ -94,13 +109,31 @@
               cat > gh-pages/index.html <<EOF
               <!DOCTYPE html>
               <html lang="en">
-              <head><meta charset="UTF-8"><title>Agent Ontology</title></head>
+              <head>
+                <meta charset="UTF-8">
+                <title>Agent Ontology</title>
+                <style>
+                  body { font-family: sans-serif; margin: 2em; }
+                  h1 { color: #334; }
+                  ul { line-height: 1.6em; }
+                </style>
+              </head>
               <body>
                 <h1>Agent Ontology</h1>
+                <p>Version: ${self.rev or "dev"}</p>
                 <p><a href="./ontology.ttl">Download ontology.ttl</a></p>
+                <ul>
+                  <li><a href="./context/">JSON-LD Contexts</a></li>
+                  <li><a href="./ontologies/">TTL Modules</a></li>
+                  <li><a href="./shacl/">SHACL Validation</a></li>
+                </ul>
               </body>
               </html>
               EOF
+
+              echo "📄 Adding .nojekyll and CNAME..."
+              touch gh-pages/.nojekyll
+              echo "ontology.s-agent-comm.org" > gh-pages/CNAME
             '';
 
             installPhase = ''

@@ -1,0 +1,42 @@
+name: Publish Agent Ontology to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🧱 Install Nix
+        uses: cachix/install-nix-action@v26
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: ⚙️ Build gh-pages output
+        run: |
+          nix build .#gh-pages
+          ls -R result
+
+      - name: 🚀 Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./result
+          publish_branch: gh-pages
+          keep_files: false
+          commit_message: "Auto-publish ontology from main @${{ github.sha }}"
+
+      - name: ✅ Confirm deployment
+        run: echo "🎉 Published ontology to GitHub Pages!"
