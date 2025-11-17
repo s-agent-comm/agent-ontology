@@ -23,8 +23,8 @@
             buildInputs = [
               pkgs.apache-jena
               pkgs.openjdk17
-              pkgs.python3
-              pkgs.python3Packages.virtualenv
+              pkgs.python311    
+              pkgs.python311Packages.virtualenv
               pkgs.git
               pkgs.coreutils
             ];
