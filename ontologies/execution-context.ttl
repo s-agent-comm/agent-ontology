@@ -12,7 +12,7 @@
 
 <https://w3id.org/agent-ontology/execution-context>
   dcterms:title "Execution Context Ontology" ;
-  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the contextual frame for AI Agent actions, including environment, security, and resource constraints." ;

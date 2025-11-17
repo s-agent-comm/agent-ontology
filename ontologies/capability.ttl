@@ -11,7 +11,7 @@
 
 <https://w3id.org/agent-ontology/capability>
   dcterms:title "Capability Ontology" ;
-  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the structure for AI Agent capabilities, separating high-level semantic capabilities from low-level, executable skills." ;

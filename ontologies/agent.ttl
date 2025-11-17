@@ -21,7 +21,7 @@
 
 <https://w3id.org/agent-ontology/agent>
   dcterms:title "Agent Ontology" ;
-  dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the structure and properties of an AI Agent, including its identity, purpose, capabilities, and operational aspects." ;
