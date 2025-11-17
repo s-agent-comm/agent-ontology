@@ -63,16 +63,13 @@
               EOF
 
               echo "🧾 Writing build metadata ..."
-              if [ -z "$COMMIT_HASH" ]; then
-              COMMIT_HASH="unknown"
-              fi
               COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
               BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
               cat > gh-pages/version.json <<JSON
               {
                 "name": "agent-ontology",
-                "commit": "${COMMIT_HASH}",
-                "build_date": "${BUILD_DATE}",
+                "commit": "''${COMMIT_HASH}",
+                "build_date": "''${BUILD_DATE}",
                 "nix_system": "${system}",
                 "nixpkgs": "${nixpkgs.url}"
               }
