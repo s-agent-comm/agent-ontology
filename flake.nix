@@ -18,7 +18,7 @@
             pyshacl
             rdflib
           ];
-          pythonEnv = pkgs.python3.withPackages pythonPackages;
+          pythonEnv = pkgs.python3Packages.withPackages pythonPackages;
         in
         {
           default = pkgs.mkShell {

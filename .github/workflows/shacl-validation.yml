@@ -1,4 +1,4 @@
-name: SHACL Validation and Vocabulary Generation
+name: SHACL Validation and JSON-LD Generation
 
 on:
   push:
@@ -22,19 +22,9 @@ jobs:
       run: pip install pyshacl rdflib
 
     - name: Run SHACL validation
-      run: |
-        pyshacl -s ontologies/agent.ttl -d tests/agent.shacl.ttl
-        pyshacl -s ontologies/accountability.ttl -d tests/accountability.shacl.ttl
-        pyshacl -s ontologies/agent-profile.ttl -d tests/agent-profile.shacl.ttl
-        pyshacl -s ontologies/capability.ttl -d tests/capability.shacl.ttl
-        pyshacl -s ontologies/delegation.ttl -d tests/delegation.shacl.ttl
-        pyshacl -s ontologies/execution-context.ttl -d tests/execution-context.shacl.ttl
-        pyshacl -s ontologies/intent.ttl -d tests/intent.shacl.ttl
-        pyshacl -s ontologies/ledger.ttl -d tests/ledger.shacl.ttl
-        pyshacl -s ontologies/payment.ttl -d tests/payment.shacl.ttl
-        pyshacl -s ontologies/security-binding.ttl -d tests/security-binding.shacl.ttl
+      run: ./tools/validate.sh
 
-  generate-vocabulary:
+  generate-jsonld:
     needs: shacl-validate
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -50,16 +40,15 @@ jobs:
     - name: Install rdflib
       run: pip install rdflib
 
-    - name: Generate vocabulary
-      run: python3 tools/generate_vocabulary.py
+    - name: Generate JSON-LD
+      run: python3 tools/generate_jsonld.py
 
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "docs: auto-generate vocabulary"
+        commit_message: "chore: auto-generate JSON-LD files"
         branch: main
-        file_pattern: specs/vocabulary/*.md
+        file_pattern: dist/*.jsonld
         commit_user_name: "GitHub Actions"
         commit_user_email: "actions@github.com"
         commit_author: "GitHub Actions <actions@github.com>"
-
