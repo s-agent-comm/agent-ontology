@@ -48,7 +48,7 @@
               pkgs.apache-jena
               pkgs.openjdk17
               pkgs.python3
-              pkgs.python3Packages.ontospy
+              pkgs.python3Packages.pip
             ];
 
             buildPhase = ''
@@ -58,6 +58,10 @@
 
               echo "🌐 Generating ontology.ttl ..."
               riot --output=TURTLE ontologies/core.ttl > gh-pages/ontology.ttl
+
+              echo "🐍 Installing Ontospy via pip ..."
+              pip install --quiet --no-cache-dir ontospy
+
 
               echo "🧩 Generating HTML documentation with Ontospy ..."
               ontospy gendocs ontologies/core.ttl -o gh-pages/docs
