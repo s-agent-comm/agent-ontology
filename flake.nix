@@ -121,7 +121,7 @@
               <body>
                 <h1>Agent Ontology</h1>
                 <p>Version: ${self.rev or "dev"}</p>
-                <p><a href="./ontology.ttl">Download ontology.ttl</a></p>
+                <p><a href="./agent-ontology.ttl">Download ontology.ttl</a></p>
                 <ul>
                   <li><a href="./context/">JSON-LD Contexts</a></li>
                   <li><a href="./ontologies/">TTL Modules</a></li>
@@ -131,9 +131,8 @@
               </html>
               EOF
 
-              echo "📄 Adding .nojekyll and CNAME..."
+              echo "📄 Adding .nojekyll ..."
               touch gh-pages/.nojekyll
-              echo "ontology.s-agent-comm.org" > gh-pages/CNAME
             '';
 
             installPhase = ''
