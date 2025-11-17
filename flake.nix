@@ -71,7 +71,7 @@
                 "commit": "''${COMMIT_HASH}",
                 "build_date": "''${BUILD_DATE}",
                 "nix_system": "${system}",
-                "nixpkgs": "${self.inputs.nixpkgs.url}"
+                "nixpkgs": "github:NixOS/nixpkgs/nixos-unstable"
               }
               JSON
             '';
