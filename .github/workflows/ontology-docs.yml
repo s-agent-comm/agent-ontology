@@ -27,7 +27,7 @@ jobs:
 
       - name: Build gh-pages package
         run: |
-          nix build .#gh-pages
+          nix build .#gh-pages --option sandbox false
           mkdir -p ./public
           cp -r result/* ./public/
 
