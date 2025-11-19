@@ -55,8 +55,8 @@
               source .venv/bin/activate
               pip install --quiet ontospy rdflib
 
-              echo "🧩 Generating HTML documentation..."
-              .venv/bin/ontospy gendocs gh-pages/$VERSION/ontology.ttl -o gh-pages/$VERSION/docs --type 2 --nobrowser
+              echo "🧩 Generating HTML documentation into a temp directory..."
+              .venv/bin/ontospy gendocs gh-pages/$VERSION/ontology.ttl -o gh-pages/docs-temp --type 2 --nobrowser
 
               echo "📦 Generating individual JSON-LD files..."
               python tools/generate_jsonld.py
@@ -65,6 +65,7 @@
               cp -r ontologies/* gh-pages/$VERSION/
               cp -r dist/* gh-pages/$VERSION/
               cp -r context gh-pages/$VERSION/
+              cp -r gh-pages/docs-temp/* gh-pages/$VERSION/docs/
 
               echo "📦 Generating combined ontology.jsonld..."
               python -c "from rdflib import Graph; g = Graph(); g.parse('gh-pages/$VERSION/ontology.ttl', format='turtle'); g.serialize(destination='gh-pages/$VERSION/ontology.jsonld', format='json-ld', indent=4)"
