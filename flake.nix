@@ -181,6 +181,9 @@ EOF
                 "nixpkgs": "github:NixOS/nixpkgs/nixos-unstable"
               }
               JSON
+
+              echo "🔍 Debugging: Listing final directory structure..."
+              ls -R gh-pages
             '';
 
             installPhase = ''
