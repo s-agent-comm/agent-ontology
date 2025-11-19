@@ -45,7 +45,7 @@
               pip install --quiet ontospy
 
               echo "🧩 Generating HTML documentation ..."
-              .venv/bin/ontospy gendocs ontologies/ontology.ttl -o gh-pages/docs --type 2 --nobrowser
+              .venv/bin/ontospy gendocs gh-pages/ontology.ttl -o gh-pages/docs --type 2 --nobrowser
 
               echo "📄 Creating index.html ..."
               cat > gh-pages/index.html <<EOF
