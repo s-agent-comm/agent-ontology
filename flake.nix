@@ -36,6 +36,7 @@
 
               echo "🌐 Generating ontology.ttl ..."
               mkdir -p gh-pages/docs
+              cp -r ontologies gh-pages/
               riot --output=TURTLE ontologies/ontology.ttl > gh-pages/ontology.ttl
 
               echo "🐍 Creating virtualenv and installing Ontospy ..."
@@ -54,9 +55,18 @@
               <body style="font-family:sans-serif;margin:2em;">
                 <h1>Agent Ontology</h1>
                 <ul>
-                  <li><a href="./ontology.ttl">ontology.ttl</a></li>
+                  <li><a href="./ontology.ttl">ontology.ttl (Combined)</a></li>
                   <li><a href="./docs/index.html">HTML Documentation (Ontospy)</a></li>
                   <li><a href="./version.json">version.json</a></li>
+                </ul>
+                <h2>Individual Ontology Modules</h2>
+                <ul>
+EOF
+              for f in ontologies/*.ttl; do
+                filename=$(basename "$f")
+                echo "                  <li><a href=\"./ontologies/$filename\">$filename</a></li>" >> gh-pages/index.html
+              done
+              cat >> gh-pages/index.html <<EOF
                 </ul>
               </body>
               </html>
