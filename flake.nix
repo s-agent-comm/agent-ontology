@@ -51,6 +51,7 @@
               echo "📦 Generating JSON-LD files..."
               python tools/generate_jsonld.py
               cp -r dist/* gh-pages/
+              cp -r context gh-pages/
 
               echo "📦 Generating combined ontology.jsonld ..."
               python -c 'from rdflib import Graph; g = Graph(); g.parse("gh-pages/ontology.ttl", format="turtle"); g.serialize(destination="gh-pages/ontology.jsonld", format="json-ld", indent=4)'
