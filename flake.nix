@@ -23,8 +23,9 @@
             buildInputs = [
               pkgs.apache-jena
               pkgs.openjdk17
-              pkgs.python311    
+              pkgs.python311
               pkgs.python311Packages.virtualenv
+              pkgs.python311Packages.rdflib
               pkgs.git
               pkgs.coreutils
             ];
@@ -47,6 +48,10 @@
               echo "🧩 Generating HTML documentation ..."
               .venv/bin/ontospy gendocs gh-pages/ontology.ttl -o gh-pages/docs --type 2 --nobrowser
 
+              echo "📦 Generating JSON-LD files..."
+              python tools/generate_jsonld.py
+              cp -r dist gh-pages/
+
               echo "📄 Creating index.html ..."
               cat > gh-pages/index.html <<EOF
               <!DOCTYPE html>
@@ -57,6 +62,7 @@
                 <ul>
                   <li><a href="./ontology.ttl">ontology.ttl (Combined)</a></li>
                   <li><a href="./docs/index.html">HTML Documentation (Ontospy)</a></li>
+                  <li><a href="./dist/">JSON-LD</a></li>
                   <li><a href="./version.json">version.json</a></li>
                 </ul>
                 <h2>Individual Ontology Modules</h2>
