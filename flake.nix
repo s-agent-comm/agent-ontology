@@ -37,39 +37,6 @@
 
               echo "🌐 Generating ontology.ttl ..."
               mkdir -p gh-pages/docs
-              cp -r ontologies gh-pages/
-              riot --output=TURTLE ontologies/ontology.ttl > gh-pages/ontology.ttl
-
-              echo "🐍 Creating virtualenv and installing Ontospy ..."
-              python -m venv .venv
-              source .venv/bin/activate
-              pip install --quiet ontospy
-
-              echo "🧩 Generating HTML documentation ..."
-              .venv/bin/ontospy gendocs gh-pages/ontology.ttl -o gh-pages/docs --type 2 --nobrowser
-
-              echo "📦 Generating JSON-LD files..."
-              python tools/generate_jsonld.py
-              cp -r dist gh-pages/
-
-              echo "📄 Creating index.html ..."
-              cat > gh-pages/index.html <<EOF
-              <!DOCTYPE html>
-              <html lang="en">
-              <head><meta charset="UTF-8"><title>Agent Ontology</title></head>
-              <body style="font-family:sans-serif;margin:2em;">
-                <h1>Agent Ontology</h1>
-                <ul>
-                  <li><a href="./ontology.ttl">ontology.ttl (Combined)</a></li>
-                  <li><a href="./docs/index.html">HTML Documentation (Ontospy)</a></li>
-                  <li><a href="./dist/">JSON-LD</a></li>
-                  <li><a href="./version.json">version.json</a></li>
-                </ul>
-                <h2>Individual Ontology Modules</h2>
-                <ul>
-EOF
-              echo "🌐 Generating ontology.ttl ..."
-              mkdir -p gh-pages/docs
               cp -r ontologies/* gh-pages/
               riot --output=TURTLE ontologies/ontology.ttl > gh-pages/ontology.ttl
 
@@ -85,28 +52,67 @@ EOF
               python tools/generate_jsonld.py
               cp -r dist/* gh-pages/
 
+              echo "📦 Generating combined ontology.jsonld ..."
+              python -c 'from rdflib import Graph; g = Graph(); g.parse("gh-pages/ontology.ttl", format="turtle"); g.serialize(destination="gh-pages/ontology.jsonld", format="json-ld", indent=4)'
+
               echo "📄 Creating index.html ..."
               cat > gh-pages/index.html <<EOF
               <!DOCTYPE html>
               <html lang="en">
-              <head><meta charset="UTF-8"><title>Agent Ontology</title></head>
-              <body style="font-family:sans-serif;margin:2em;">
-                <h1>Agent Ontology</h1>
-                <ul>
-                  <li><a href="./ontology.ttl">ontology.ttl (Combined)</a></li>
-                  <li><a href="./docs/index.html">HTML Documentation (Ontospy)</a></li>
-                  <li><a href="./">JSON-LD Files</a></li>
-                  <li><a href="./version.json">version.json</a></li>
-                </ul>
-                <h2>Individual Ontology Modules</h2>
-                <ul>
+              <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Agent Ontology - Specification</title>
+                  <style>
+                      body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 2em; background-color: #f4f4f4; color: #333; }
+                      .container { max-width: 900px; margin: auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                      h1, h2, h3 { color: #0056b3; }
+                      a { color: #007bff; text-decoration: none; }
+                      a:hover { text-decoration: underline; }
+                      ul { list-style-type: none; padding: 0; }
+                      li { margin-bottom: 0.5em; }
+                      .section-title { border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-top: 2em; }
+                      .file-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
+                      .file-list li { background-color: #e9f7ff; padding: 0.8em; border-radius: 4px; border: 1px solid #cceeff; }
+                  </style>
+              </head>
+              <body>
+                  <div class="container">
+                      <h1>Agent Ontology</h1>
+                      <p>This page serves as a human-readable entry point and simple specification for the Agent Ontology. The Agent Ontology provides a foundational framework for defining and understanding agents, their capabilities, interactions, and lifecycle within various contexts.</p>
+
+                      <h2 class="section-title">Core Ontology Files</h2>
+                      <ul>
+                          <li><a href="./ontology.ttl"><strong>ontology.ttl</strong></a> (Combined Turtle format) - The complete Agent Ontology in Turtle format.</li>
+                          <li><a href="./ontology.jsonld"><strong>ontology.jsonld</strong></a> (Combined JSON-LD format) - The complete Agent Ontology in JSON-LD format.</li>
+                          <li><a href="./docs/index.html">HTML Documentation</a> (Generated by Ontospy) - Detailed, browsable documentation of the ontology classes, properties, and relationships.</li>
+                          <li><a href="./version.json">Version Information</a> - Metadata about the current build and commit.</li>
+                      </ul>
+
+                      <h2 class="section-title">Individual Ontology Modules (Turtle)</h2>
+                      <ul class="file-list">
 EOF
               for f in ontologies/*.ttl; do
                 filename=$(basename "$f")
                 echo "                  <li><a href=\"./$filename\">$filename</a></li>" >> gh-pages/index.html
               done
               cat >> gh-pages/index.html <<EOF
-                </ul>
+                      </ul>
+
+                      <h2 class="section-title">Individual Ontology Modules (JSON-LD)</h2>
+                      <ul class="file-list">
+EOF
+              for f in dist/*.jsonld; do
+                filename=$(basename "$f")
+                echo "                  <li><a href=\"./$filename\">$filename</a></li>" >> gh-pages/index.html
+              done
+              cat >> gh-pages/index.html <<EOF
+                      </ul>
+
+                      <h2 class="section-title">How to Use</h2>
+                      <p>Agents and frameworks can consume these ontology files directly. For content negotiation and persistent identifiers, please refer to the <a href="https://w3id.org/agent-ontology/">official w3id.org entry point</a> (once configured).</p>
+                      <p>For developers, the source code and further details can be found on the <a href="https://github.com/s-agent-comm/agent-ontology">GitHub repository</a>.</p>
+                  </div>
               </body>
               </html>
 EOF
