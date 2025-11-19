@@ -70,7 +70,7 @@ EOF
                 </ul>
               </body>
               </html>
-              EOF
+EOF
 
               echo "🧾 Writing build metadata ..."
               COMMIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
