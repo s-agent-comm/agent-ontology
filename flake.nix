@@ -36,7 +36,7 @@
 
               echo "🌐 Generating ontology.ttl ..."
               mkdir -p gh-pages/docs
-              riot --output=TURTLE ontologies/core.ttl > gh-pages/ontology.ttl
+              riot --output=TURTLE ontologies/ontology.ttl > gh-pages/ontology.ttl
 
               echo "🐍 Creating virtualenv and installing Ontospy ..."
               python -m venv .venv
@@ -44,7 +44,7 @@
               pip install --quiet ontospy
 
               echo "🧩 Generating HTML documentation ..."
-              .venv/bin/ontospy gendocs ontologies/core.ttl -o gh-pages/docs --type 2 --nobrowser
+              .venv/bin/ontospy gendocs ontologies/ontology.ttl -o gh-pages/docs --type 2 --nobrowser
 
               echo "📄 Creating index.html ..."
               cat > gh-pages/index.html <<EOF
