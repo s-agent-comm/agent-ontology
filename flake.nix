@@ -45,7 +45,7 @@
 
               echo "🚀 Setting up versioned directories..."
               mkdir -p gh-pages/$VERSION
-              ln -sfn $VERSION gh-pages/latest
+              mkdir -p gh-pages/latest
 
               echo "🌐 Generating combined ontology.ttl..."
               riot --output=TURTLE ontologies/*.ttl > gh-pages/$VERSION/ontology.ttl
@@ -139,6 +139,9 @@ EOF
               </body>
               </html>
 EOF
+
+              echo "🚀 Creating 'latest' release by copying version $VERSION..."
+              cp -r gh-pages/$VERSION/* gh-pages/latest/
 
               echo "📄 Creating root index.html portal..."
               cat > gh-pages/index.html <<EOF
