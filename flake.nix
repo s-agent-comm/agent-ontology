@@ -38,7 +38,7 @@
               echo "🌐 Generating ontology.ttl ..."
               mkdir -p gh-pages/docs
               cp -r ontologies/* gh-pages/
-              riot --output=TURTLE ontologies/ontology.ttl > gh-pages/ontology.ttl
+              riot --output=TURTLE ontologies/*.ttl > gh-pages/ontology.ttl
 
               echo "🐍 Creating virtualenv and installing Ontospy ..."
               python -m venv .venv
