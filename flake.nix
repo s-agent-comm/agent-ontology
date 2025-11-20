@@ -55,8 +55,14 @@
               source .venv/bin/activate
               pip install --quiet ontospy rdflib
 
+              echo "🛠️ Ensuring docs-temp directory exists..."
+              mkdir -p gh-pages/docs-temp
+
               echo "🧩 Generating HTML documentation into a temp directory..."
               .venv/bin/ontospy gendocs gh-pages/$VERSION/ontology.ttl -o gh-pages/docs-temp --type 2 --nobrowser
+              
+              echo "🔍 Checking contents of docs-temp..."
+              ls -R gh-pages/docs-temp
 
               echo "📦 Generating individual JSON-LD files..."
               python tools/generate_jsonld.py
@@ -65,6 +71,7 @@
               cp -r ontologies/* gh-pages/$VERSION/
               cp -r dist/* gh-pages/$VERSION/
               cp -r context gh-pages/$VERSION/
+              mkdir -p gh-pages/$VERSION/docs
               cp -r gh-pages/docs-temp/* gh-pages/$VERSION/docs/
 
               echo "📦 Generating combined ontology.jsonld..."
