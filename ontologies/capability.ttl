@@ -15,8 +15,8 @@
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the structure for AI Agent capabilities, separating high-level semantic capabilities from low-level, executable skills." ;
-  dcterms:modified "2025-11-13"^^xsd:date ;
-  owl:versionInfo "0.3.0" ;
+  dcterms:modified "2025-11-20"^^xsd:date ;
+  owl:versionInfo "0.4.0" ;
   owl:imports <https://w3id.org/agent-ontology/core> .
 
 #################################################################

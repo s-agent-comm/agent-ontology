@@ -18,8 +18,8 @@
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines concepts related to the semantic expression of purpose and objectives for AI Agent actions." ;
-  dcterms:modified "2025-11-10"^^xsd:date ;
-  owl:versionInfo "0.2.0" ;
+  dcterms:modified "2025-11-20"^^xsd:date ;
+  owl:versionInfo "0.3.0" ;
   owl:imports <https://w3id.org/agent-ontology/core> ;
   owl:imports <https://w3id.org/agent-ontology/delegation> ;
   owl:imports <https://w3id.org/agent-ontology/ledger> .

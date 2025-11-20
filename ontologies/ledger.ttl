@@ -20,8 +20,8 @@
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines concepts for verifiable, append-only records of AI Agent events, actions, and governance." ;
-  dcterms:modified "2025-11-10"^^xsd:date ;
-  owl:versionInfo "0.2.0" ;
+  dcterms:modified "2025-11-20"^^xsd:date ;
+  owl:versionInfo "0.3.0" ;
   owl:imports <https://w3id.org/agent-ontology/core> ;
   owl:imports <https://w3id.org/agent-ontology/agent> ;
   owl:imports <https://w3id.org/agent-ontology/delegation> ;

@@ -16,7 +16,7 @@
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
-  owl:versionInfo "0.1.0" ;
+  owl:versionInfo "0.2.0" ;
   rdfs:comment "Provides semantic mappings from the Agent Ontology to the Schema.org vocabulary to enhance interoperability and discoverability." .
 
 # Mappings for Core Agent Concepts

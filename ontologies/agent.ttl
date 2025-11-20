@@ -25,8 +25,8 @@
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the structure and properties of an AI Agent, including its identity, purpose, capabilities, and operational aspects." ;
-  dcterms:modified "2025-11-13"^^xsd:date ;
-  owl:versionInfo "0.3.0" ;
+  dcterms:modified "2025-11-20"^^xsd:date ;
+  owl:versionInfo "0.4.0" ;
   owl:imports <https://w3id.org/agent-ontology/core> ;
   owl:imports <https://w3id.org/agent-ontology/identity> ;
   owl:imports <https://w3id.org/agent-ontology/economic> ;

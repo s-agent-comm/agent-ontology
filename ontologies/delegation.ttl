@@ -18,8 +18,8 @@
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
   dcterms:description "Defines the structured transfer of authority between AI Agents, including scope, actors, and constraints." ;
-  dcterms:modified "2025-11-10"^^xsd:date ;
-  owl:versionInfo "0.2.0" ;
+  dcterms:modified "2025-11-20"^^xsd:date ;
+  owl:versionInfo "0.3.0" ;
   owl:imports <https://w3id.org/agent-ontology/core> ;
   owl:imports <https://w3id.org/agent-ontology/capability> .
 
