@@ -28,8 +28,13 @@
 # Delegation Ontology — Purpose
 #################################################################
 
+del:AgentRelationship a owl:Class ;
+    rdfs:label "AgentRelationship" ;
+    rdfs:comment "A relationship between two or more agents." .
+
 del:Delegation a owl:Class ;
     rdfs:subClassOf core:Delegation ;
+    rdfs:subClassOf del:AgentRelationship ;
     rdfs:label "Delegation" ;
     rdfs:comment """
     Represents a structured transfer of authority, allowing one Agent to act 

@@ -4,6 +4,11 @@
 @prefix schema: <http://schema.org/> .
 @prefix core: <https://w3id.org/agent-ontology/core#> .
 @prefix agent: <https://w3id.org/agent-ontology/agent#> .
+@prefix cap: <https://w3id.org/agent-ontology/capability#> .
+@prefix del: <https://w3id.org/agent-ontology/delegation#> .
+@prefix contract: <https://w3id.org/agent-ontology/contract#> .
+@prefix intent: <https://w3id.org/agent-ontology/intent#> .
+@prefix ledger: <https://w3id.org/agent-ontology/ledger#> .
 @prefix id: <https://w3id.org/agent-ontology/identity#> .
 
 <https://w3id.org/agent-ontology/schema-org-mapping>
@@ -17,9 +22,26 @@
 # Mappings for Core Agent Concepts
 core:Agent rdfs:subClassOf schema:SoftwareApplication .
 core:Agent rdfs:subClassOf schema:Service .
+agent:Person rdfs:subClassOf schema:Person .
+agent:Organization rdfs:subClassOf schema:Organization .
 
 # An Agent's capability can be represented as a potential action it can perform.
 core:hasCapability rdfs:subPropertyOf schema:potentialAction .
+cap:Capability rdfs:subClassOf schema:Action .
+cap:Skill rdfs:subClassOf schema:Action .
+
+# Delegation
+del:AgentRelationship rdfs:subClassOf schema:Role .
+
+# Contract
+contract:Contract rdfs:subClassOf schema:Contract .
+
+# Intent
+intent:Intent rdfs:subClassOf schema:Intent .
+core:Action rdfs:subClassOf schema:Action .
+
+# Ledger
+ledger:LedgerEvent rdfs:subClassOf schema:Event .
 
 # An Agent's purpose/objective can be mapped to a general description.
 agent:objective rdfs:subPropertyOf schema:description .

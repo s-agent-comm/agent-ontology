@@ -179,3 +179,14 @@
 :contractualInterfaces a owl:ObjectProperty ;
     rdfs:domain core:Agent ;
     rdfs:range contract:ContractSet .
+
+# Agent Types
+:Person a owl:Class ;
+    rdfs:subClassOf core:Agent ;
+    rdfs:label "Person" ;
+    rdfs:comment "An agent that is a human." .
+
+:Organization a owl:Class ;
+    rdfs:subClassOf core:Agent ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An agent that is an organization." .
