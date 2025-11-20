@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+@prefix agent: <https://w3id.org/agent-ontology/agent#> .
+@prefix id: <https://w3id.org/agent-ontology/identity#> .
+
+<https://w3id.org/agent-ontology/schema-org-mapping>
+  dcterms:title "Agent Ontology to Schema.org Mapping" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
+  dcterms:creator "Tyson Chen (SlashLife AI)" ;
+  owl:versionInfo "0.1.0" ;
+  rdfs:comment "Provides semantic mappings from the Agent Ontology to the Schema.org vocabulary to enhance interoperability and discoverability." .
+
+# Mappings for Core Agent Concepts
+core:Agent rdfs:subClassOf schema:SoftwareApplication .
+core:Agent rdfs:subClassOf schema:Service .
+
+# An Agent's capability can be represented as a potential action it can perform.
+core:hasCapability rdfs:subPropertyOf schema:potentialAction .
+
+# An Agent's purpose/objective can be mapped to a general description.
+agent:objective rdfs:subPropertyOf schema:description .
+
+# An Agent's identity title can be mapped to a general name.
+id:title rdfs:subPropertyOf schema:name .

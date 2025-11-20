@@ -7,7 +7,7 @@
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:rightsHolder "Semantic Agent Communication Community Group" ;
   dcterms:creator "Tyson Chen (SlashLife AI)" ;
-  owl:versionInfo "0.1.0" ;
+  owl:versionInfo "0.2.0" ;
   rdfs:comment "The main entry point for the complete AI Agent Ontology, importing all constituent modules." ;
   owl:imports <https://w3id.org/agent-ontology/core> ;
   owl:imports <https://w3id.org/agent-ontology/agent> ;
@@ -23,4 +23,5 @@
   owl:imports <https://w3id.org/agent-ontology/payment> ;
   owl:imports <https://w3id.org/agent-ontology/economic> ;
   owl:imports <https://w3id.org/agent-ontology/lifecycle> ;
-  owl:imports <https://w3id.org/agent-ontology/contract> .
+  owl:imports <https://w3id.org/agent-ontology/contract> ;
+  owl:imports <https://w3id.org/agent-ontology/schema-org-mapping> .
