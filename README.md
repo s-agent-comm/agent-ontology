@@ -19,14 +19,56 @@ In practice, this ontology functions as both:
 1. a **formal specification** (OWL/RDF), and  
 2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
 
-```
-[Unified Ontic Ontology]          ← W3C AI-KR CG drafting
-        ↓
-[Computational Ontic Layer]       ← Our Ontic ↔ Executable Binding
-        ↓
-[Semantic ISA / AgentIDL]         ← Our: Execution Syntax & Compiler
-        ↓
-[Runtime Ledger / Proof Layer]    ← Our: Verifiable Behavior
+```mermaid
+graph TD
+    subgraph Abstract_Cognitive[Abstract / Cognitive Layer]
+        I[Intent (Mental State)]
+        P[Proposition / Description]
+        K[Knowledge / Meaning]
+    end
+
+    subgraph Social_Agentive[Social / Agentive Layer]
+        A[Agent (ArtifactSocial)]
+        R[Role / Delegation]
+        C[Contract / Ledger]
+        D[Capability (Disposition)]
+        AC[Accountability]
+    end
+
+    subgraph Physical_Ontic[Physical / Ontic Layer]
+        PR[Process / Event]
+        ST[State / Situation]
+        FD[FunctionDisposition]
+        OB[Object / Artifact]
+        LQ[Location / Quantity]
+    end
+
+    subgraph Computational_Ontic[Computational Ontic Layer]
+        EC[ExecutionContext]
+        PB[ProofBinding (Security)]
+        AR[AgentRuntime / Instance]
+        SS[Semantic Syscall / Action]
+        LT[LedgerTrace / Log]
+    end
+
+    I -->|depends_on| A
+    P -->|context_of| A
+    K -->|emerges_from| A
+
+    A -->|realizes| PR
+    D -->|realizes| FD
+    R -->|involves| A
+    C -->|binds| A
+    AC -->|requires| PB
+
+    PR -->|occurs_in| EC
+    FD -->|compiled_as| SS
+    OB -->|recorded_by| LT
+    ST -->|verified_by| PB
+
+    A -->|executes| EC
+    EC -->|writes| LT
+    EC -->|produces| PB
 ```
 
 ## Why This Ontology Matters
