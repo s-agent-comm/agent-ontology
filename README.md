@@ -19,6 +19,16 @@ In practice, this ontology functions as both:
 1. a **formal specification** (OWL/RDF), and  
 2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
 
+```
+[Unified Ontic Ontology]          ← W3C AI-KR CG drafting
+        ↓
+[Computational Ontic Layer]       ← Our Ontic ↔ Executable Binding
+        ↓
+[Semantic ISA / AgentIDL]         ← Our: Execution Syntax & Compiler
+        ↓
+[Runtime Ledger / Proof Layer]    ← Our: Verifiable Behavior
+```
+
 ## Why This Ontology Matters
 
 This project serves as the semantic core of the **W3C Semantic Agent Communication Community Group (SAC-CG)**.  
