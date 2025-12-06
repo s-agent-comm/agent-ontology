@@ -19,6 +19,8 @@ In practice, this ontology functions as both:
 1. a **formal specification** (OWL/RDF), and  
 2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
 
+By leverage Paola Di Maio's work: https://figshare.com/articles/online_resource/Ontic_Categories/30760739, the whole picture can be seen as below:
+
 ```mermaid
 graph TD
     subgraph Abstract_Cognitive ["Abstract / Cognitive Layer"]
