@@ -21,51 +21,57 @@ In practice, this ontology functions as both:
 
 ```mermaid
 graph TD
-    subgraph Abstract_Cognitive[Abstract / Cognitive Layer]
-        I[Intent (Mental State)]
-        P[Proposition / Description]
-        K[Knowledge / Meaning]
+    subgraph Abstract_Cognitive ["Abstract / Cognitive Layer"]
+        I["Intent (Mental State)"]
+        P["Proposition / Description"]
+        K["Knowledge / Meaning"]
     end
 
-    subgraph Social_Agentive[Social / Agentive Layer]
-        A[Agent (ArtifactSocial)]
-        R[Role / Delegation]
-        C[Contract / Ledger]
-        D[Capability (Disposition)]
-        AC[Accountability]
+    subgraph Social_Agentive ["Social / Agentive Layer"]
+        A["Agent (ArtifactSocial)"]
+        R["Role / Delegation"]
+        C["Contract / Ledger"]
+        D["Capability (Disposition)"]
+        AC["Accountability"]
     end
 
-    subgraph Physical_Ontic[Physical / Ontic Layer]
-        PR[Process / Event]
-        ST[State / Situation]
-        FD[FunctionDisposition]
-        OB[Object / Artifact]
-        LQ[Location / Quantity]
+    subgraph Physical_Ontic ["Physical / Ontic Layer"]
+        PR["Process / Event"]
+        ST["State / Situation"]
+        FD["FunctionDisposition"]
+        OB["Object / Artifact"]
+        LQ["Location / Quantity"]
     end
 
-    subgraph Computational_Ontic[Computational Ontic Layer]
-        EC[ExecutionContext]
-        PB[ProofBinding (Security)]
-        AR[AgentRuntime / Instance]
-        SS[Semantic Syscall / Action]
-        LT[LedgerTrace / Log]
+    subgraph Computational_Ontic ["Computational Ontic Layer"]
+        EC["ExecutionContext"]
+        PB["ProofBinding (Security)"]
+        AR["AgentRuntime / Instance"]
+        SS["Semantic Syscall / Action"]
+        LT["LedgerTrace / Log"]
     end
 
+    %% --- Relationships ---
+    
+    %% Cognitive to Social
     I -->|depends_on| A
     P -->|context_of| A
     K -->|emerges_from| A
 
+    %% Social to Physical
     A -->|realizes| PR
     D -->|realizes| FD
     R -->|involves| A
     C -->|binds| A
+    
+    %% Social/Physical to Computational (The Binding)
     AC -->|requires| PB
-
     PR -->|occurs_in| EC
     FD -->|compiled_as| SS
     OB -->|recorded_by| LT
     ST -->|verified_by| PB
 
+    %% Computational Internal
     A -->|executes| EC
     EC -->|writes| LT
     EC -->|produces| PB
