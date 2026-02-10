@@ -9,16 +9,11 @@
 @prefix exu: <http://example.org/unified-ontic#> .
 @prefix agent: <https://s-agent-comm.github.io/ontology/ontologies/agent#> .
 @prefix intent: <https://s-agent-comm.github.io/ontology/ontologies/intent#> .
-@prefix capability:
-<https://s-agent-comm.github.io/ontology/ontologies/capability#> .
-@prefix contract:
-<https://s-agent-comm.github.io/ontology/ontologies/contract#> .
+@prefix capability: <https://s-agent-comm.github.io/ontology/ontologies/capability#> .
+@prefix contract: <https://s-agent-comm.github.io/ontology/ontologies/contract#> .
 @prefix ledger: <https://s-agent-comm.github.io/ontology/ontologies/ledger#> .
-@prefix delegation:
-<https://s-agent-comm.github.io/ontology/ontologies/delegation#> .
-@prefix security:
-<https://s-agent-comm.github.io/ontology/ontologies/security-binding#>
-.
+@prefix delegation: <https://s-agent-comm.github.io/ontology/ontologies/delegation#> .
+@prefix security: <https://s-agent-comm.github.io/ontology/ontologies/security-binding#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
@@ -28,35 +23,35 @@
 
 agent:Agent a owl:Class ;
     rdfs:label "Agent" ;
-    rdfs:comment "An autonomous computational entity with identity and intent,
+    rdfs:comment """An autonomous computational entity with identity and intent,
                   modeled as a social artifact capable of delegation
-and accountability." ;
+and accountability.""" ;
     rdfs:subClassOf exu:ArtifactSocial ;
-    exu:mapsTo "BFO:MaterialEntity->Artifact; DOLCE:SocialObject;
-SUMO:Agent; UFO:SocialAgent" ;
-    rdfs:seeAlso <https://basic-formal-ontology.org/> ,
-<https://www.loa-cnr.it/DOLCE.html> .
+    exu:mapsTo """BFO:MaterialEntity->Artifact; DOLCE:SocialObject;
+SUMO:Agent; UFO:SocialAgent""" ;
+    rdfs:seeAlso <https://basic-formal-ontology.org/>,
+        <https://www.loa-cnr.it/DOLCE.html> .
 
 intent:Intent a owl:Class ;
     rdfs:label "Intent" ;
-    rdfs:comment "A deliberative mental state or communicative
-commitment of an agent." ;
+    rdfs:comment """A deliberative mental state or communicative
+commitment of an agent.""" ;
     rdfs:subClassOf exu:AbstractEntity ;
-    exu:mapsTo "BFO:GenericallyDependentContinuant;
-DOLCE:Description/Proposition; SUMO:Intent; UFO:Intention" .
+    exu:mapsTo """BFO:GenericallyDependentContinuant;
+DOLCE:Description/Proposition; SUMO:Intent; UFO:Intention""" .
 
 capability:Capability a owl:Class ;
     rdfs:label "Capability" ;
-    rdfs:comment "A realizable disposition or function that an agent
-can exercise." ;
+    rdfs:comment """A realizable disposition or function that an agent
+can exercise.""" ;
     rdfs:subClassOf exu:FunctionDisposition ;
-    exu:mapsTo "BFO:RealizableEntity/Function; DOLCE:Capability;
-SUMO:Capability; GFO:Disposition; UFO:Disposition" .
+    exu:mapsTo """BFO:RealizableEntity/Function; DOLCE:Capability;
+SUMO:Capability; GFO:Disposition; UFO:Disposition""" .
 
 contract:Contract a owl:Class ;
     rdfs:label "Contract" ;
-    rdfs:comment "A social artifact representing binding obligations
-between agents." ;
+    rdfs:comment """A social artifact representing binding obligations
+between agents.""" ;
     rdfs:subClassOf exu:ArtifactSocial ;
     exu:mapsTo "DOLCE:SocialObject; SUMO:Agreement; UFO:SocialRelator" .
 
@@ -64,21 +59,21 @@ ledger:Ledger a owl:Class ;
     rdfs:label "Ledger" ;
     rdfs:comment "A record artifact capturing accountable agent transactions." ;
     rdfs:subClassOf exu:ArtifactSocial ;
-    exu:mapsTo "BFO:InformationArtifact; DOLCE:InformationObject;
-SUMO:Document" .
+    exu:mapsTo """BFO:InformationArtifact; DOLCE:InformationObject;
+SUMO:Document""" .
 
 delegation:Delegation a owl:Class ;
     rdfs:label "Delegation" ;
-    rdfs:comment "A social relation between agents defining authority
-transfer or responsibility." ;
+    rdfs:comment """A social relation between agents defining authority
+transfer or responsibility.""" ;
     rdfs:subClassOf exu:RelationRelator ;
-    exu:mapsTo "BFO:RelationalRole; DOLCE:Relation; SUMO:Relation;
-UFO:Relator" .
+    exu:mapsTo """BFO:RelationalRole; DOLCE:Relation; SUMO:Relation;
+UFO:Relator""" .
 
 security:ProofBinding a owl:Class ;
     rdfs:label "ProofBinding" ;
-    rdfs:comment "A verifiable binding between identity, proof, and
-execution context." ;
+    rdfs:comment """A verifiable binding between identity, proof, and
+execution context.""" ;
     rdfs:subClassOf exu:DependentContinuant ;
     exu:mapsTo "BFO:Quality; DOLCE:Quality; SUMO:Attribute" .
 
@@ -87,12 +82,11 @@ execution context." ;
 ################################################################
 
 <https://s-agent-comm.github.io/ontology/ontologies/core#>
-    rdfs:comment "This ontology is ontically grounded via Unified
+    rdfs:comment """This ontology is ontically grounded via Unified
 Ontic Ontology alignment,
                   enabling cross-compatibility with major upper
 ontologies (BFO, DOLCE, SUMO, UFO).
                   The mapping ensures that computational agents are
 modeled as social artifacts
                   with realizable capabilities, intentional states,
-and relational accountability." .
-
+and relational accountability.""" .

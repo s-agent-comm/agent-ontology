@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   shacl-validate:
     runs-on: ubuntu-latest
@@ -44,7 +47,7 @@ jobs:
       run: python3 tools/generate_jsonld.py
 
     - name: Commit and push changes
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "chore: auto-generate JSON-LD files"
         branch: main
