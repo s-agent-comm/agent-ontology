@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://slashlife.ai/schema/accountability.schema.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/accountability.jsonld",
   "title": "Agent Accountability Schema",
   "description": "Semantic representation of traceable and verifiable accountability for actions performed by AI agents across Web, OS, and hardware trust layers.",
   "type": "object",
-  "@context": "https://slashlife.ai/contexts/accountability.context.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/accountability.jsonld",
 
   "properties": {
     "id": {

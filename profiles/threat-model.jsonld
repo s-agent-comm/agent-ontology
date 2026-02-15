@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/threat-model.jsonld",
+  "title": "Threat Model Schema",
+  "description": "Schema for minimal threat-modeling exchange between agents.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/threat-model.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "tm:Agent" },
+    "hasCapability": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "expressesIntent": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "performsTask": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

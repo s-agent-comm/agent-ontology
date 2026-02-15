@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/agent-ontology/ontic-alignment#",
+    "exu": "http://example.org/unified-ontic#",
+    "agent": "https://s-agent-comm.github.io/ontology/ontologies/agent#",
+    "intent": "https://s-agent-comm.github.io/ontology/ontologies/intent#",
+    "capability": "https://s-agent-comm.github.io/ontology/ontologies/capability#",
+    "contract": "https://s-agent-comm.github.io/ontology/ontologies/contract#",
+    "ledger": "https://s-agent-comm.github.io/ontology/ontologies/ledger#",
+    "delegation": "https://s-agent-comm.github.io/ontology/ontologies/delegation#",
+    "security": "https://s-agent-comm.github.io/ontology/ontologies/security-binding#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "id": "@id",
+    "type": "@type"
+  }
+}

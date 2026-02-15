@@ -2,7 +2,7 @@ name: Nightly Build (Agent Ontology)
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,21 +34,30 @@ jobs:
             echo "Error: Could not extract version from ontology.ttl"
             exit 1
           fi
-          DATE=$(date -u +"%Y%m%d")
-          TAG="nightly-${DATE}"
+          DATE=$(date -u +"%Y-%m-%d")
+          TAG="nightly"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
           echo "DATE=$DATE" >> "$GITHUB_ENV"
           echo "TAG=$TAG" >> "$GITHUB_ENV"
-          ARTIFACT="agent-ontology-${VERSION}-nightly-${DATE}.zip"
-          (cd result && zip -r "../${ARTIFACT}" .)
-          shasum -a 256 "${ARTIFACT}" > "${ARTIFACT}.sha256"
+          PAGES_ARTIFACT="agent-ontology-pages-nightly.zip"
+          SRC_ARTIFACT="agent-ontology-src-nightly.zip"
+          (cd result && zip -r "../${PAGES_ARTIFACT}" .)
+          git archive --format=zip -o "${SRC_ARTIFACT}" HEAD
+          sha256sum "${PAGES_ARTIFACT}" > "${PAGES_ARTIFACT}.sha256"
+          sha256sum "${SRC_ARTIFACT}" > "${SRC_ARTIFACT}.sha256"
 
       - name: Tag nightly
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git tag "${TAG}"
-          git push origin "${TAG}"
+          git tag -f "${TAG}"
+          git push -f origin "${TAG}"
+
+      - name: Remove existing nightly release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete "${TAG}" -y || true
 
       - name: Create nightly release
         uses: softprops/action-gh-release@v2
@@ -59,7 +68,9 @@ jobs:
           name: Nightly ${{ env.DATE }}
           generate_release_notes: true
           files: |
-            agent-ontology-${{ env.VERSION }}-nightly-${{ env.DATE }}.zip
-            agent-ontology-${{ env.VERSION }}-nightly-${{ env.DATE }}.zip.sha256
+            agent-ontology-pages-nightly.zip
+            agent-ontology-pages-nightly.zip.sha256
+            agent-ontology-src-nightly.zip
+            agent-ontology-src-nightly.zip.sha256
           draft: false
           prerelease: true

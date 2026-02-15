@@ -1,0 +1,20 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix economic: <https://w3id.org/agent-ontology/economic#> .
+
+economic:WalletSetShape
+    a sh:NodeShape ;
+    sh:targetClass economic:WalletSet ;
+    sh:property [
+        sh:path economic:wallet ;
+        sh:class economic:Wallet ;
+    ] .
+
+economic:WalletShape
+    a sh:NodeShape ;
+    sh:targetClass economic:Wallet ;
+    sh:property [
+        sh:path economic:address ;
+        sh:datatype xsd:string ;
+    ] .

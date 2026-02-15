@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/economic.jsonld",
+  "title": "Economic Schema",
+  "description": "Schema for wallet sets and wallet addresses.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/economic.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "economic:WalletSet" },
+    "wallet": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "address": { "type": "string" }
+        }
+      }
+    }
+  }
+}

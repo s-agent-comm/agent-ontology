@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/agent-ontology/identity#",
+    "identity": "https://w3id.org/agent-ontology/identity#",
+    "core": "https://w3id.org/agent-ontology/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "id": "@id",
+    "type": "@type",
+
+    "hasDID": { "@id": "identity:hasDID", "@type": "@id" },
+    "managedByKMS": { "@id": "identity:managedByKMS", "@type": "@id" },
+    "did": { "@id": "identity:did", "@type": "xsd:string" },
+    "version": { "@id": "identity:version", "@type": "xsd:string" },
+    "title": { "@id": "identity:title", "@type": "xsd:string" },
+    "kmsEndpoint": { "@id": "identity:kmsEndpoint", "@type": "xsd:anyURI" }
+  }
+}

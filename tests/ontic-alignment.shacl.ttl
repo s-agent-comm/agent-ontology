@@ -1,0 +1,103 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix exu: <http://example.org/unified-ontic#> .
+@prefix agent: <https://s-agent-comm.github.io/ontology/ontologies/agent#> .
+@prefix intent: <https://s-agent-comm.github.io/ontology/ontologies/intent#> .
+@prefix capability: <https://s-agent-comm.github.io/ontology/ontologies/capability#> .
+@prefix contract: <https://s-agent-comm.github.io/ontology/ontologies/contract#> .
+@prefix ledger: <https://s-agent-comm.github.io/ontology/ontologies/ledger#> .
+@prefix delegation: <https://s-agent-comm.github.io/ontology/ontologies/delegation#> .
+@prefix security: <https://s-agent-comm.github.io/ontology/ontologies/security-binding#> .
+
+agent:AgentAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode agent:Agent ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:ArtifactSocial ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+intent:IntentAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode intent:Intent ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:AbstractEntity ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+capability:CapabilityAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode capability:Capability ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:FunctionDisposition ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+contract:ContractAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode contract:Contract ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:ArtifactSocial ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ledger:LedgerAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode ledger:Ledger ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:ArtifactSocial ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+delegation:DelegationAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode delegation:Delegation ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:RelationRelator ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+security:ProofBindingAlignmentShape
+    a sh:NodeShape ;
+    sh:targetNode security:ProofBinding ;
+    sh:property [
+        sh:path rdfs:subClassOf ;
+        sh:hasValue exu:DependentContinuant ;
+    ] ;
+    sh:property [
+        sh:path exu:mapsTo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .

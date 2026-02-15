@@ -1,0 +1,36 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix id: <https://w3id.org/agent-ontology/identity#> .
+
+id:AgentIdentityShape
+    a sh:NodeShape ;
+    sh:targetClass id:AgentIdentity ;
+    sh:property [
+        sh:path id:hasDID ;
+        sh:class id:DecentralizedIdentifier ;
+    ] ;
+    sh:property [
+        sh:path id:managedByKMS ;
+        sh:class id:KeyManagementSystem ;
+    ] ;
+    sh:property [
+        sh:path id:did ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path id:version ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path id:title ;
+        sh:datatype xsd:string ;
+    ] .
+
+id:KeyManagementSystemShape
+    a sh:NodeShape ;
+    sh:targetClass id:KeyManagementSystem ;
+    sh:property [
+        sh:path id:kmsEndpoint ;
+        sh:datatype xsd:anyURI ;
+    ] .

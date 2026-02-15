@@ -1,8 +1,9 @@
 {
   "@context": {
     "@vocab": "https://w3id.org/agent-ontology/agent#",
+    "agent": "https://w3id.org/agent-ontology/agent#",
     "core": "https://w3id.org/agent-ontology/core#",
-    "id": "https://w3id.org/agent-ontology/identity#",
+    "identity": "https://w3id.org/agent-ontology/identity#",
     "cap": "https://w3id.org/agent-ontology/capability#",
     "del": "https://w3id.org/agent-ontology/delegation#",
     "did_ns": "https://www.w3.org/ns/did#",
@@ -11,8 +12,6 @@
     "economic": "/context/economic.jsonld",
     "lifecycle": "/context/lifecycle.jsonld",
     "contract": "/context/contract.jsonld",
-
-    /* ==== Core Identifiers ==== */
 
     "id": "@id",
     "type": "@type",
@@ -27,9 +26,6 @@
     "TraceEvent": "core:TraceEvent",
     "Artifact": "core:Artifact",
 
-
-    /* ==== DID & Identity vocab (W3C-aligned) ==== */
-
     "did": {
       "@id": "did_ns:did",
       "@type": "@id"
@@ -43,9 +39,6 @@
       "@type": "@id"
     },
 
-
-    /* ==== Homomorphix OS Agent Model ==== */
-
     "hasIdentity": "agent:hasIdentity",
     "purpose_and_role": "agent:purposeAndRole",
     "operational_triggers_and_io": "agent:operationalTriggersAndIO",
@@ -54,9 +47,6 @@
     "identity_interfaces": "agent:identityInterfaces",
     "lifecycle_management": "agent:lifecycleManagement",
     "contractual_interfaces": "agent:contractualInterfaces",
-
-
-    /* ==== Core Object Properties (from core.ttl) ==== */
 
     "hasIntent": {
       "@id": "core:hasIntent",
@@ -83,9 +73,6 @@
       "@type": "@id"
     },
 
-
-    /* ==== Delegation schema alignment ==== */
-
     "delegatedBy": {
       "@id": "del:delegatedBy",
       "@type": "@id"
@@ -98,9 +85,6 @@
       "@id": "del:delegationScope",
       "@type": "@id"
     },
-
-
-    /* ==== Utility ==== */
 
     "description": "core:description"
   }

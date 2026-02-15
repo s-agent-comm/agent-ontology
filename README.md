@@ -95,12 +95,14 @@ By establishing a verifiable semantic layer for agent interoperability, this pro
 
 *   **`profiles/`**: This subdirectory contains [JSON Schema](https://json-schema.org/) validation profiles. These schemas define the expected structure and data types for JSON documents that conform to specific parts of the ontology and are used for data validation.
 
+*   **`dist/`**: Auto-generated JSON-LD serializations of each ontology module. These files are produced by `tools/generate_jsonld.py` and should not be edited manually.
+
 *   **`tests/`**: This subdirectory contains [SHACL (Shapes Constraint Language)](https://www.w3.org/TR/shacl/) files for validating the ontology data models, ensuring that RDF data conforms to the expected graph patterns.
 
 ## How to Use
 
 *   **For Semantic Web Tools:** Load the `ontologies/ontology.ttl` file into any RDF/OWL compatible tool to explore the full semantic model.
-*   **For JSON-LD Processing:** Use the context files in `context/` to expand or compact JSON-LD documents. The main `context/agent.jsonld` context imports the other modular contexts, providing a single entry point for most use cases.
+*   **For JSON-LD Processing:** Use the context files in `context/` to expand or compact JSON-LD documents. The main `context/agent.jsonld` context imports the other modular contexts, providing a single entry point for most use cases. Contexts and profiles are curated to match the ontology; update them as needed when you introduce new terms.
 *   **For Data Validation:** Use the JSON Schema files in `profiles/` with a JSON Schema validator to ensure your JSON data conforms to the expected structure. For RDF data validation, use the SHACL files in `tests/` with a SHACL validator.
 
 ## Development
@@ -133,4 +135,4 @@ To automatically generate JSON-LD files from the Turtle (`.ttl`) files in the `o
 python3 tools/generate_jsonld.py
 ```
 
-This will create a corresponding `.jsonld` file for each `.ttl` file in the project's root directory.
+This will create a corresponding `.jsonld` file for each `.ttl` file in the `dist/` directory. It does not modify `context/` or `profiles/`.

@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://slashlife.ai/schema/agent.schema.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/agent.jsonld",
   "title": "Agent Model Schema",
   "description": "Semantic schema defining declarative AI agents, identity, capabilities, intents, execution contexts, and runtime bindings.",
   "type": "object",
-  "@context": "https://slashlife.ai/contexts/agent.context.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/agent.jsonld",
 
   "properties": {
     "id": {

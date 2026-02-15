@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/identity.jsonld",
+  "title": "Identity Schema",
+  "description": "Schema for agent identity metadata and DID bindings.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/identity.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "identity:AgentIdentity" },
+    "did": { "type": "string" },
+    "version": { "type": "string" },
+    "title": { "type": "string" },
+    "managedByKMS": { "type": "string" },
+    "kmsEndpoint": { "type": "string", "format": "uri" }
+  }
+}

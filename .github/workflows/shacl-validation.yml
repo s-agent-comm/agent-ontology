@@ -22,7 +22,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install pyshacl rdflib
+      run: pip install -r requirements.txt
 
     - name: Run SHACL validation
       run: ./tools/validate.sh
@@ -41,7 +41,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install rdflib
-      run: pip install rdflib
+      run: pip install -r requirements.txt
 
     - name: Generate JSON-LD
       run: python3 tools/generate_jsonld.py

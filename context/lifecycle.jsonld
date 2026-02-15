@@ -1,6 +1,7 @@
 {
   "@context": {
     "@vocab": "https://w3id.org/agent-ontology/lifecycle#",
+    "lifecycle": "https://w3id.org/agent-ontology/lifecycle#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "LifecycleRecord": "lifecycle:LifecycleRecord",

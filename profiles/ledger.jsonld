@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://slashlife.ai/schema/ledger.schema.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/ledger.jsonld",
   "title": "Agent Ledger Event Schema",
   "description": "Semantic representation of a canonical event in an append-only ledger stream for agent actions.",
   "type": "object",
-  "@context": "https://slashlife.ai/contexts/ledger.context.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/ledger.jsonld",
   "definitions": {
     "verification": {
       "type": "object",

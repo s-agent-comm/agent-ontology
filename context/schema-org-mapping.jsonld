@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/agent-ontology/schema-org-mapping#",
+    "schema": "http://schema.org/",
+    "core": "https://w3id.org/agent-ontology/core#",
+    "agent": "https://w3id.org/agent-ontology/agent#",
+    "cap": "https://w3id.org/agent-ontology/capability#",
+    "del": "https://w3id.org/agent-ontology/delegation#",
+    "contract": "https://w3id.org/agent-ontology/contract#",
+    "intent": "https://w3id.org/agent-ontology/intent#",
+    "ledger": "https://w3id.org/agent-ontology/ledger#",
+    "identity": "https://w3id.org/agent-ontology/identity#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "id": "@id",
+    "type": "@type"
+  }
+}

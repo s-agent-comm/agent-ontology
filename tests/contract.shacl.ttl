@@ -1,0 +1,20 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix contract: <https://w3id.org/agent-ontology/contract#> .
+
+contract:ContractSetShape
+    a sh:NodeShape ;
+    sh:targetClass contract:ContractSet ;
+    sh:property [
+        sh:path contract:contract ;
+        sh:class contract:Contract ;
+    ] .
+
+contract:ContractShape
+    a sh:NodeShape ;
+    sh:targetClass contract:Contract ;
+    sh:property [
+        sh:path contract:termsUri ;
+        sh:datatype xsd:anyURI ;
+    ] .

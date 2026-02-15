@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://slashlife.ai/schema/delegation.schema.jsonld",
+  "$id": "https://w3id.org/agent-ontology/profiles/delegation.jsonld",
   "title": "Agent Delegation Schema",
   "description": "Semantic representation of authority delegation between AI agents or between human and agent principals.",
   "type": "object",
-  "@context": "https://slashlife.ai/contexts/delegation.context.jsonld",
+  "@context": "https://w3id.org/agent-ontology/context/delegation.jsonld",
 
   "properties": {
     "id": {

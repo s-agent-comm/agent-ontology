@@ -1,6 +1,7 @@
 {
   "@context": {
     "@vocab": "https://w3id.org/agent-ontology/ledger#",
+    "ledger": "https://w3id.org/agent-ontology/ledger#",
     "core": "https://w3id.org/agent-ontology/core#",
     "agent": "https://w3id.org/agent-ontology/agent#",
     "del": "https://w3id.org/agent-ontology/delegation#",

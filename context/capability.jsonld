@@ -1,6 +1,7 @@
 {
   "@context": {
     "@vocab": "https://w3id.org/agent-ontology/capability#",
+    "cap": "https://w3id.org/agent-ontology/capability#",
     "core": "https://w3id.org/agent-ontology/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

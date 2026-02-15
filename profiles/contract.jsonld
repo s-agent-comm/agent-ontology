@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/contract.jsonld",
+  "title": "Contract Schema",
+  "description": "Schema for basic contract records and terms metadata.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/contract.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "contract:Contract" },
+    "termsUri": { "type": "string", "format": "uri" }
+  }
+}

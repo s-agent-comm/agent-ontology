@@ -1,0 +1,96 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix core: <https://w3id.org/agent-ontology/core#> .
+
+core:AgentShape
+    a sh:NodeShape ;
+    sh:targetClass core:Agent ;
+    sh:property [
+        sh:path core:hasIntent ;
+        sh:class core:Intent ;
+    ] ;
+    sh:property [
+        sh:path core:hasCapability ;
+        sh:class core:Capability ;
+    ] ;
+    sh:property [
+        sh:path core:executesAction ;
+        sh:class core:Action ;
+    ] ;
+    sh:property [
+        sh:path core:performsTask ;
+        sh:class core:Task ;
+    ] .
+
+core:DelegationShape
+    a sh:NodeShape ;
+    sh:targetClass core:Delegation ;
+    sh:property [
+        sh:path core:delegatedBy ;
+        sh:class core:Agent ;
+    ] ;
+    sh:property [
+        sh:path core:delegatesTo ;
+        sh:class core:Agent ;
+    ] ;
+    sh:property [
+        sh:path core:delegationScope ;
+        sh:class core:Capability ;
+    ] .
+
+core:ActionShape
+    a sh:NodeShape ;
+    sh:targetClass core:Action ;
+    sh:property [
+        sh:path core:producesArtifact ;
+        sh:class core:Artifact ;
+    ] ;
+    sh:property [
+        sh:path core:recordedIn ;
+        sh:class core:TraceEvent ;
+    ] .
+
+core:ExecutionContextShape
+    a sh:NodeShape ;
+    sh:targetClass core:ExecutionContext ;
+    sh:property [
+        sh:path core:contextOf ;
+        sh:class core:Action ;
+    ] .
+
+core:TaskShape
+    a sh:NodeShape ;
+    sh:targetClass core:Task ;
+    sh:property [
+        sh:path core:requiresCapability ;
+        sh:class core:Capability ;
+    ] ;
+    sh:property [
+        sh:path core:hasSubtask ;
+        sh:class core:Task ;
+    ] .
+
+core:TaskNodeShape
+    a sh:NodeShape ;
+    sh:targetClass core:TaskNode ;
+    sh:property [
+        sh:path core:hasDependency ;
+        sh:class core:TaskNode ;
+    ] .
+
+core:TraceEventShape
+    a sh:NodeShape ;
+    sh:targetClass core:TraceEvent ;
+    sh:property [
+        sh:path core:timestamp ;
+        sh:datatype xsd:dateTime ;
+    ] .
+
+core:ArtifactShape
+    a sh:NodeShape ;
+    sh:targetClass core:Artifact ;
+    sh:property [
+        sh:path core:description ;
+        sh:datatype xsd:string ;
+    ] .

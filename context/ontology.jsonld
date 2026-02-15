@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/agent-ontology/ontology#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "id": "@id",
+    "type": "@type",
+
+    "title": "dcterms:title",
+    "comment": "rdfs:comment",
+    "versionInfo": "owl:versionInfo",
+    "imports": { "@id": "owl:imports", "@type": "@id" }
+  }
+}

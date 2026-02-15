@@ -1,0 +1,24 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix lifecycle: <https://w3id.org/agent-ontology/lifecycle#> .
+
+lifecycle:LifecycleRecordShape
+    a sh:NodeShape ;
+    sh:targetClass lifecycle:LifecycleRecord ;
+    sh:property [
+        sh:path lifecycle:genesisRecord ;
+        sh:class lifecycle:GenesisRecord ;
+    ] ;
+    sh:property [
+        sh:path lifecycle:state ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path lifecycle:healthCheck ;
+        sh:class lifecycle:HealthCheckSpec ;
+    ] ;
+    sh:property [
+        sh:path lifecycle:decommissionRecord ;
+        sh:class lifecycle:DecommissionRecord ;
+    ] .

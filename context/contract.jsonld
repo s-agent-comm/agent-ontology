@@ -1,6 +1,7 @@
 {
   "@context": {
     "@vocab": "https://w3id.org/agent-ontology/contract#",
+    "contract": "https://w3id.org/agent-ontology/contract#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "ContractSet": "contract:ContractSet",

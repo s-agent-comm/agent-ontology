@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/lifecycle.jsonld",
+  "title": "Lifecycle Schema",
+  "description": "Schema for lifecycle records and operational health metadata.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/lifecycle.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "lifecycle:LifecycleRecord" },
+    "state": { "type": "string" },
+    "genesisRecord": { "type": "string" },
+    "healthCheck": { "type": "string" },
+    "decommissionRecord": { "type": "string" }
+  }
+}

@@ -1,0 +1,64 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix tm: <https://w3id.org/agent-ontology/threat-model#> .
+
+tm:AgentShape
+    a sh:NodeShape ;
+    sh:targetClass tm:Agent ;
+    sh:property [
+        sh:path tm:hasCapability ;
+        sh:class tm:Capability ;
+    ] ;
+    sh:property [
+        sh:path tm:expressesIntent ;
+        sh:class tm:Intent ;
+    ] ;
+    sh:property [
+        sh:path tm:performsTask ;
+        sh:class tm:Task ;
+    ] ;
+    sh:property [
+        sh:path tm:delegatesTask ;
+        sh:class tm:Task ;
+    ] .
+
+tm:TaskShape
+    a sh:NodeShape ;
+    sh:targetClass tm:Task ;
+    sh:property [
+        sh:path tm:requiresCapability ;
+        sh:class tm:Capability ;
+    ] ;
+    sh:property [
+        sh:path tm:hasSubtask ;
+        sh:class tm:Task ;
+    ] .
+
+tm:TaskNodeShape
+    a sh:NodeShape ;
+    sh:targetClass tm:TaskNode ;
+    sh:property [
+        sh:path tm:hasDependency ;
+        sh:class tm:TaskNode ;
+    ] .
+
+tm:DelegationShape
+    a sh:NodeShape ;
+    sh:targetClass tm:Delegation ;
+    sh:property [
+        sh:path tm:delegatedTo ;
+        sh:class tm:Agent ;
+    ] ;
+    sh:property [
+        sh:path tm:delegatedFrom ;
+        sh:class tm:Agent ;
+    ] .
+
+tm:IntentShape
+    a sh:NodeShape ;
+    sh:targetClass tm:Intent ;
+    sh:property [
+        sh:path tm:IntentAlignsWithTask ;
+        sh:class tm:Task ;
+    ] .

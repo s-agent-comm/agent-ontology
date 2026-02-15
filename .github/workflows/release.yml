@@ -35,9 +35,12 @@ jobs:
             exit 1
           fi
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-          ARTIFACT="agent-ontology-${VERSION}.zip"
-          (cd result && zip -r "../${ARTIFACT}" .)
-          shasum -a 256 "${ARTIFACT}" > "${ARTIFACT}.sha256"
+          PAGES_ARTIFACT="agent-ontology-pages-${VERSION}.zip"
+          SRC_ARTIFACT="agent-ontology-src-${VERSION}.zip"
+          (cd result && zip -r "../${PAGES_ARTIFACT}" .)
+          git archive --format=zip -o "${SRC_ARTIFACT}" HEAD
+          sha256sum "${PAGES_ARTIFACT}" > "${PAGES_ARTIFACT}.sha256"
+          sha256sum "${SRC_ARTIFACT}" > "${SRC_ARTIFACT}.sha256"
 
       - name: Create Release
         id: create_release
@@ -49,7 +52,9 @@ jobs:
           name: Release ${{ github.ref_name }}
           generate_release_notes: true
           files: |
-            agent-ontology-${{ env.VERSION }}.zip
-            agent-ontology-${{ env.VERSION }}.zip.sha256
+            agent-ontology-pages-${{ env.VERSION }}.zip
+            agent-ontology-pages-${{ env.VERSION }}.zip.sha256
+            agent-ontology-src-${{ env.VERSION }}.zip
+            agent-ontology-src-${{ env.VERSION }}.zip.sha256
           draft: false
           prerelease: false

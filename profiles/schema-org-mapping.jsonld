@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/schema-org-mapping.jsonld",
+  "title": "Schema.org Mapping Metadata Schema",
+  "description": "Schema for schema.org mapping ontology metadata.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/ontology.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "owl:Ontology" },
+    "title": { "type": "string" },
+    "comment": { "type": "string" },
+    "versionInfo": { "type": "string" }
+  }
+}

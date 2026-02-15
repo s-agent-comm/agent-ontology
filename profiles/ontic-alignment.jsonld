@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/agent-ontology/profiles/ontic-alignment.jsonld",
+  "title": "Ontic Alignment Metadata Schema",
+  "description": "Schema for ontic alignment ontology metadata.",
+  "type": "object",
+  "@context": "https://w3id.org/agent-ontology/context/ontology.jsonld",
+
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "const": "owl:Ontology" },
+    "title": { "type": "string" },
+    "comment": { "type": "string" }
+  }
+}
