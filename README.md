@@ -19,7 +19,7 @@ In practice, this ontology functions as both:
 1. a **formal specification** (OWL/RDF), and  
 2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
 
-By leverage Paola Di Maio's work: https://figshare.com/articles/online_resource/Ontic_Categories/30760739, the whole picture can be seen as below:
+By leverage Paola Di Maio's work: https://figshare.com/articles/online_resource/Ontic_Categories/30760739 ([13bd16a](https://github.com/s-agent-comm/agent-ontology/commit/13bd16ad1fc77265f4dc71ce9790eb5242bc33eb)) , the whole picture can be seen as below:
 
 ```mermaid
 graph TD
