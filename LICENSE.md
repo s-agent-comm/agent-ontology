@@ -12,3 +12,7 @@ Under the following terms:
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 © 2025 Semantic Agent Communication Community Group. All rights reserved under CC BY 4.0.
+
+## Exclusions
+
+This license applies only to content authored by the project contributors. It does not extend to any third-party concepts, frameworks, or categorization systems that may have been previously referenced as discussion context. Such content has been removed from this repository. See [NOTICE.md](NOTICE.md) for details.

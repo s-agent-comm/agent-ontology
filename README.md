@@ -19,66 +19,6 @@ In practice, this ontology functions as both:
 1. a **formal specification** (OWL/RDF), and  
 2. a **runtime reference model** instantiated by agent frameworks or operating systems implementing verifiable semantics.
 
-By leverage Paola Di Maio's work: https://figshare.com/articles/online_resource/Ontic_Categories/30760739 ([13bd16a](https://github.com/s-agent-comm/agent-ontology/commit/13bd16ad1fc77265f4dc71ce9790eb5242bc33eb)) , the whole picture can be seen as below:
-
-```mermaid
-graph TD
-    subgraph Abstract_Cognitive ["Abstract / Cognitive Layer"]
-        I["Intent (Mental State)"]
-        P["Proposition / Description"]
-        K["Knowledge / Meaning"]
-    end
-
-    subgraph Social_Agentive ["Social / Agentive Layer"]
-        A["Agent (ArtifactSocial)"]
-        R["Role / Delegation"]
-        C["Contract / Ledger"]
-        D["Capability (Disposition)"]
-        AC["Accountability"]
-    end
-
-    subgraph Physical_Ontic ["Physical / Ontic Layer"]
-        PR["Process / Event"]
-        ST["State / Situation"]
-        FD["FunctionDisposition"]
-        OB["Object / Artifact"]
-        LQ["Location / Quantity"]
-    end
-
-    subgraph Computational_Ontic ["Computational Ontic Layer"]
-        EC["ExecutionContext"]
-        PB["ProofBinding (Security)"]
-        AR["AgentRuntime / Instance"]
-        SS["Semantic Syscall / Action"]
-        LT["LedgerTrace / Log"]
-    end
-
-    %% --- Relationships ---
-    
-    %% Cognitive to Social
-    I -->|depends_on| A
-    P -->|context_of| A
-    K -->|emerges_from| A
-
-    %% Social to Physical
-    A -->|realizes| PR
-    D -->|realizes| FD
-    R -->|involves| A
-    C -->|binds| A
-    
-    %% Social/Physical to Computational (The Binding)
-    AC -->|requires| PB
-    PR -->|occurs_in| EC
-    FD -->|compiled_as| SS
-    OB -->|recorded_by| LT
-    ST -->|verified_by| PB
-
-    %% Computational Internal
-    A -->|executes| EC
-    EC -->|writes| LT
-    EC -->|produces| PB
-```
-
 ## Why This Ontology Matters
 
 This project serves as the semantic core of the **W3C Semantic Agent Communication Community Group (SAC-CG)**.  
