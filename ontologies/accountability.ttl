@@ -69,7 +69,7 @@ acc:timestamp a owl:DatatypeProperty ;
 
 acc:actor a owl:ObjectProperty ;
     rdfs:domain acc:AccountabilityEvent ;
-    rdfs:range agent:Agent .
+    rdfs:range core:Agent .
 
 acc:action a owl:ObjectProperty ;
     rdfs:domain acc:AccountabilityEvent ;
@@ -103,7 +103,7 @@ acc:responsibility a owl:ObjectProperty ;
 
 acc:assignedTo a owl:ObjectProperty ;
     rdfs:domain acc:ResponsibilityAttribution ;
-    rdfs:range agent:Agent .
+    rdfs:range core:Agent .
 
 acc:rationale a owl:DatatypeProperty ;
     rdfs:domain acc:ResponsibilityAttribution ;

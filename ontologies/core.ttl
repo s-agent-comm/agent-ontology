@@ -43,6 +43,10 @@
     rdfs:label "Delegation" ;
     rdfs:comment "A structured semantic relation where one Agent authorizes another to act within a defined scope." .
 
+:ExecutionResult a owl:Class ;
+    rdfs:label "ExecutionResult" ;
+    rdfs:comment "The result of an executed Action, as recorded by a runtime ledger event." .
+
 :ExecutionContext a owl:Class ;
     rdfs:label "ExecutionContext" ;
     rdfs:comment "A contextual frame describing conditions, trust anchors, or constraints associated with an Agent action." .

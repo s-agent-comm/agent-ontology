@@ -52,7 +52,7 @@ sec:TrustAnchor a owl:Class ;
 #################################################################
 
 sec:hasKeyMaterial a owl:ObjectProperty ;
-    rdfs:domain agent:Agent ;
+    rdfs:domain core:Agent ;
     rdfs:range sec:KeyMaterial ;
     rdfs:label "hasKeyMaterial" .
 
@@ -73,7 +73,7 @@ sec:verifiedBy a owl:ObjectProperty ;
 
 sec:signsRecord a owl:ObjectProperty ;
     rdfs:domain sec:KeyMaterial ;
-    rdfs:range ledger:LedgerRecord ;
+    rdfs:range ledger:LedgerEvent ;
     rdfs:label "signsRecord" ;
     rdfs:comment "Indicates ledger entries signed using this key material." .
 
@@ -100,8 +100,11 @@ sec:trustLevel a owl:DatatypeProperty ;
 # Axioms for Threat Detection
 #################################################################
 
-# Capability and Task consistency (prevents Capability Misrepresentation)
-core:hasCapability rdfs:subPropertyOf core:requiresCapability .
+# Capability and Task consistency (prevents Capability Misrepresentation).
+# Not expressed as rdfs:subPropertyOf: core:hasCapability has domain core:Agent and
+# core:requiresCapability has domain core:Task, so the sub-property axiom would entail
+# that every Agent holding a Capability is a Task. Whether an assigned Agent has the
+# Capabilities a Task requires is a closed-world check for a SHACL shape, not an OWL axiom.
 
 # Agents cannot claim conflicting capabilities (Minimal Disjoint Axiom)
 sec:CriticalCapability a owl:Class ;

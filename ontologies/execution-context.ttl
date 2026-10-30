@@ -46,21 +46,21 @@ ctx:OutputState a owl:Class ;
 #################################################################
 
 ctx:hasEnvironment a owl:ObjectProperty ;
-    rdfs:domain intent:ExecutionContext ;
+    rdfs:domain core:ExecutionContext ;
     rdfs:range ctx:ExecutionEnvironment ;
     rdfs:label "hasEnvironment" .
 
 ctx:hasSecurityContext a owl:ObjectProperty ;
-    rdfs:domain intent:ExecutionContext ;
+    rdfs:domain core:ExecutionContext ;
     rdfs:range ctx:SecurityContext ;
     rdfs:label "hasSecurityContext" .
 
 ctx:inputState a owl:ObjectProperty ;
-    rdfs:domain intent:ExecutionContext ;
+    rdfs:domain core:ExecutionContext ;
     rdfs:range ctx:InputState .
 
 ctx:outputState a owl:ObjectProperty ;
-    rdfs:domain intent:ExecutionContext ;
+    rdfs:domain core:ExecutionContext ;
     rdfs:range ctx:OutputState .
 
 #################################################################

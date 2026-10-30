@@ -25,7 +25,7 @@ The following were removed:
 ## Standard Alignments Retained
 
 Mappings to **open, published standards** remain in the repository:
-- `ontologies/schema-org-mapping.ttl` — mappings to [Schema.org](https://schema.org/) (CC0 licensed vocabulary)
+- `ontologies/schema-org-mapping.ttl` — mappings to [Schema.org](https://schema.org/) (vocabulary licensed CC BY-SA 3.0; only Schema.org IRIs are referenced)
 - References to W3C standards (RDF, OWL, SHACL, DID) — open W3C specifications
 
 These are independently authored mappings to publicly available specifications and do not incorporate third-party IP.

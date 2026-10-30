@@ -102,7 +102,7 @@ ledger:verifiedBy a owl:DatatypeProperty ;
 
 ledger:actor a owl:ObjectProperty ;
     rdfs:domain ledger:LedgerEvent ;
-    rdfs:range agent:Agent ;
+    rdfs:range core:Agent ;
     rdfs:comment "Agent or principal responsible for the event." .
 
 ledger:delegation a owl:ObjectProperty ;
@@ -207,3 +207,11 @@ ledger:governanceAction a owl:ObjectProperty ;
 ledger:specVersion a owl:ObjectProperty ;
     rdfs:domain ledger:GovernanceLedgerEvent ;
     rdfs:range ledger:SpecVersion .
+
+ledger:GovernanceAction a owl:Class ;
+    rdfs:label "GovernanceAction" ;
+    rdfs:comment "A governance action recorded by a GovernanceLedgerEvent." .
+
+ledger:SpecVersion a owl:Class ;
+    rdfs:label "SpecVersion" ;
+    rdfs:comment "A specification version referenced by a GovernanceLedgerEvent." .

@@ -85,7 +85,7 @@ intent:executedIn a owl:ObjectProperty ;
 
 intent:loggedAs a owl:ObjectProperty ;
     rdfs:domain core:Action ;
-    rdfs:range ledger:RuntimeLedgerRecord ;
+    rdfs:range ledger:RuntimeLedgerEvent ;
     rdfs:label "loggedAs" ;
     rdfs:comment "Links an executed action to its ledger record." .
 
